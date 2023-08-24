@@ -1,8 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
+import {showMenu} from './utils/menu';
+import {showVideo} from './utils/video';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import './modules/hero-swiper.js';
-import './modules/tours-swiper.js';
 
 // ---------------------------------
 
@@ -12,6 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  showMenu();
+  showVideo();
 
   // Modules
   // ---------------------------------
