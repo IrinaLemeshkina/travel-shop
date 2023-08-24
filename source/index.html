@@ -246,8 +246,8 @@
                   <div class="info__bottom">
                     <div>
                       <span>Сложность:</span>
-                      <svg class="info__bottom__icon" width="9" height="12" aria-label="Местонахождение.">
-                        <use xlink:href="img/sprite.svg#tour-star-transparent"></use>
+                      <svg class="info__bottom__icon" width="79" height="14" aria-label="Местонахождение.">
+                        <use xlink:href="img/sprite.svg#three-stars"></use>
                       </svg>
                     </div>
                     <div>
@@ -307,8 +307,8 @@
                   <div class="info__bottom">
                     <div>
                       <span>Сложность:</span>
-                      <svg class="info__bottom__icon" width="9" height="12" aria-label="Местонахождение.">
-                        <use xlink:href="img/sprite.svg#tour-star-transparent"></use>
+                      <svg class="info__bottom__icon" width="79" height="14" aria-label="Местонахождение.">
+                        <use xlink:href="img/sprite.svg#two-stars"></use>
                       </svg>
                     </div>
                     <div>
@@ -366,8 +366,8 @@
                   <div class="info__bottom">
                     <div>
                       <span>Сложность:</span>
-                      <svg class="info__bottom__icon" width="9" height="12" aria-label="Местонахождение.">
-                        <use xlink:href="img/sprite.svg#tour-star-transparent"></use>
+                      <svg class="info__bottom__icon" width="79" height="14" aria-label="Местонахождение.">
+                        <use xlink:href="img/sprite.svg#three-stars"></use>
                       </svg>
                     </div>
                     <div>
@@ -428,8 +428,8 @@
                   <div class="info__bottom">
                     <div>
                       <span>Сложность:</span>
-                      <svg class="info__bottom__icon" width="9" height="12" aria-label="Местонахождение.">
-                        <use xlink:href="img/sprite.svg#tour-star-transparent"></use>
+                      <svg class="info__bottom__icon" width="79" height="14" aria-label="Местонахождение.">
+                        <use xlink:href="img/sprite.svg#three-stars"></use>
                       </svg>
                     </div>
                     <div>
@@ -489,8 +489,8 @@
                   <div class="info__bottom">
                     <div>
                       <span>Сложность:</span>
-                      <svg class="info__bottom__icon" width="9" height="12" aria-label="Местонахождение.">
-                        <use xlink:href="img/sprite.svg#tour-star-transparent"></use>
+                      <svg class="info__bottom__icon" width="79" height="14" aria-label="Местонахождение.">
+                        <use xlink:href="img/sprite.svg#two-stars"></use>
                       </svg>
                     </div>
                     <div>
@@ -548,8 +548,8 @@
                   <div class="info__bottom">
                     <div>
                       <span>Сложность:</span>
-                      <svg class="info__bottom__icon" width="9" height="12" aria-label="Местонахождение.">
-                        <use xlink:href="img/sprite.svg#tour-star-transparent"></use>
+                      <svg class="info__bottom__icon" width="79" height="14" aria-label="Местонахождение.">
+                        <use xlink:href="img/sprite.svg#three-stars"></use>
                       </svg>
                     </div>
                     <div>
@@ -565,9 +565,9 @@
               </div>
             </div>
 
-            <div class="tours__swiper-button tours__swiper-button--back">
+            <div class="swiper-button swiper-button-prev">
             </div>
-            <div class="tours__swiper-button tours__swiper-button--along">
+            <div class="swiper-button swiper-button-next">
             </div>
           </div>
         </div>
@@ -579,15 +579,16 @@
           </a>
         </div>
       </section>
-      <section class="trainers" id="training">
-        <div class="trainers__wrapper">
-          <h2 class="trainers__title">Обучение</h2>
-          <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов
+      <section class="training" id="training">
+        <div class="training__wrapper">
+          <h2 class="training__title">Обучение</h2>
+          <p class="training__description">Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых
+            десятки пройденных маршрутов
             Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
-          <h3>Наши инструкторы</h3>
-          <div class="trainers__swiper swiper">
-            <div class="trainers__swiper-wrapper swiper-wrapper">
-              <div class="trainers__card swiper-slide" tabindex="0">
+          <h3 class="training__subtitle">Наши инструкторы</h3>
+          <div class="training__swiper swiper" data-id="swiper-training">
+            <div class="training__swiper-wrapper swiper-wrapper">
+              <div class="training__card swiper-slide" tabindex="0">
                 <picture>
                   <source media="(max-width: 767px)" type="image/webp"
                     srcset="./img/trainers/sasha-mobile.webp 1x, ./img/trainers/sasha-mobile@2x.webp 2x" width="250"
@@ -607,19 +608,19 @@
                     srcset="./img/trainers/sasha.jpg 1x, ./img/trainers/sasha@2x.jpg 2x"
                     alt="Фото тренера Александр Прокофьев." width="238" height="212" loading="lazy">
                 </picture>
-                <div class="trainers__info info">
+                <div class="training__info info">
                   <div class="info__main">
-                    <p class="trainers__name">Александр
+                    <p class="training__name">Александр
                       Прокофьев</p>
-                    <svg class="trainers__vk__icon" width="122" height="22" aria-label="Логотип ВК.">
+                    <svg class="training__vk__icon" width="122" height="22" aria-label="Логотип ВК.">
                       <use xlink:href="img/sprite.svg#trainers-vk"></use>
                     </svg>
                   </div>
-                  <p class="trainers__about">Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек.
+                  <p class="training__about">Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек.
                     Любит природу.</p>
                 </div>
               </div>
-              <div class="trainers__card swiper-slide" tabindex="0">
+              <div class="training__card swiper-slide" tabindex="0">
                 <picture>
                   <source media="(max-width: 767px)" type="image/webp"
                     srcset="./img/trainers/sveta-mobile.webp 1x, ./img/trainers/sveta-mobile@2x.webp 2x" width="250"
@@ -639,20 +640,20 @@
                     srcset="./img/trainers/sveta.jpg 1x, ./img/trainers/sveta@2x.jpg 2x"
                     alt="Фото тренера Светлана Афиногенова." width="238" height="212" loading="lazy">
                 </picture>
-                <div class="trainers__info info">
+                <div class="training__info info">
                   <div class="info__main">
-                    <p class="trainers__name">Светлана
+                    <p class="training__name">Светлана
                       Афиногенова</p>
-                    <svg class="trainers__vk__icon" width="122" height="22" aria-label="Логотип ВК.">
+                    <svg class="training__vk__icon" width="122" height="22" aria-label="Логотип ВК.">
                       <use xlink:href="img/sprite.svg#trainers-vk"></use>
                     </svg>
                   </div>
-                  <p class="trainers__about">Видеть мир вокруг, познавать его опасности, находить друг друга,
+                  <p class="training__about">Видеть мир вокруг, познавать его опасности, находить друг друга,
                     становиться
                     ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
                 </div>
               </div>
-              <div class="trainers__card swiper-slide" tabindex="0">
+              <div class="training__card swiper-slide" tabindex="0">
                 <picture>
                   <source media="(max-width: 767px)" type="image/webp"
                     srcset="./img/trainers/nadiya-mobile.webp 1x, ./img/trainers/nadiya-mobile@2x.webp 2x" width="250"
@@ -672,19 +673,19 @@
                     srcset="./img/trainers/nadiya.jpg 1x, ./img/trainers/nadiya@2x.jpg 2x"
                     alt="Фото тренера Надежда Колесниченко." width="238" height="212" loading="lazy">
                 </picture>
-                <div class="trainers__info info">
+                <div class="training__info info">
                   <div class="info__main">
-                    <p class="trainers__name">Надежда
+                    <p class="training__name">Надежда
                       Колесниченко</p>
-                    <svg class="trainers__vk__icon" width="122" height="22" aria-label="Логотип ВК.">
+                    <svg class="training__vk__icon" width="122" height="22" aria-label="Логотип ВК.">
                       <use xlink:href="img/sprite.svg#trainers-vk"></use>
                     </svg>
                   </div>
-                  <p class="trainers__about">Участники говорят, что Надежда ответственная, приятная в&nbsp;общении,
+                  <p class="training__about">Участники говорят, что Надежда ответственная, приятная в&nbsp;общении,
                     и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
                 </div>
               </div>
-              <div class="trainers__card swiper-slide" tabindex="0">
+              <div class="training__card swiper-slide" tabindex="0">
                 <picture>
                   <source media="(max-width: 767px)" type="image/webp"
                     srcset="./img/trainers/fedor-mobile.webp 1x, ./img/trainers/fedor-mobile@2x.webp 2x" width="250"
@@ -704,65 +705,108 @@
                     srcset="./img/trainers/fedor.jpg 1x, ./img/trainers/fedor@2x.jpg 2x"
                     alt="Фото тренера Федор Кайгородов." width="238" height="212" loading="lazy">
                 </picture>
-                <div class="trainers__info info">
+                <div class="training__info info">
                   <div class="info__main">
-                    <p class="trainers__name">Федор
+                    <p class="training__name">Федор
                       Кайгородов</p>
-                    <svg class="trainers__vk__icon" width="122" height="22" aria-label="Логотип ВК.">
+                    <svg class="training__vk__icon" width="122" height="22" aria-label="Логотип ВК.">
                       <use xlink:href="img/sprite.svg#trainers-vk"></use>
                     </svg>
                   </div>
-                  <p class="trainers__about">Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России
+                  <p class="training__about">Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России
                     побывал
                     в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
                 </div>
               </div>
+              <div class="training__card swiper-slide" tabindex="0">
+                <picture>
+                  <source media="(max-width: 767px)" type="image/webp"
+                    srcset="./img/trainers/sasha-mobile.webp 1x, ./img/trainers/sasha-mobile@2x.webp 2x" width="250"
+                    height="212">
+                  <source media="(max-width: 1199px)" type="image/webp"
+                    srcset="./img/trainers/sasha-tablet.webp 1x, ./img/trainers/sasha-tablet@2x.webp 2x" width="176"
+                    height="212">
+                  <source media="(min-width: 1200px)" type="image/webp"
+                    srcset="./img/trainers/sasha.webp 1x, ./img/trainers/sasha@2x.webp 2x" width="238" height="212">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/trainers/sasha-mobile.jpg 1x, ./img/trainers/sasha-mobile@2x.png 2x" width="250"
+                    height="212">
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/trainers/sasha-tablet.jpg 1x, ./img/trainers/sasha-tablet@2x.png 2x" width="176"
+                    height="212">
+                  <img src="./img/trainers/sasha.jpg"
+                    srcset="./img/trainers/sasha.jpg 1x, ./img/trainers/sasha@2x.jpg 2x"
+                    alt="Фото тренера Александр Прокофьев." width="238" height="212" loading="lazy">
+                </picture>
+                <div class="training__info info">
+                  <div class="info__main">
+                    <p class="training__name">Александр
+                      Прокофьев</p>
+                    <svg class="training__vk__icon" width="122" height="22" aria-label="Логотип ВК.">
+                      <use xlink:href="img/sprite.svg#trainers-vk"></use>
+                    </svg>
+                  </div>
+                  <p class="training__about">Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек.
+                    Любит природу.</p>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="trainers__swiper-button trainers__swiper-button--back">
-          </div>
-          <div class="trainers__swiper-button trainers__swiper-button--along">
-          </div>
-
-          <div class="trainers__training training">
-            <h3 class="training__title">Процесс обучения</h3>
-            <div>
-              <span>
-                <svg class="training__icon" width="25" height="25" aria-label="Рисунок карты.">
-                  <use xlink:href="img/sprite.svg#trainers-map"></use>
-                </svg>
-              </span>
-              <p>Изучение спортивного
-                туристского движения</p>
+            <div class="swiper-button swiper-button-prev">
             </div>
-            <div>
-              <span>
-                <svg class="training__icon" width="25" height="25" aria-label="Рисунок ботинка.">
-                  <use xlink:href="img/sprite.svg#trainers-boots"></use>
-                </svg>
-              </span>
-              <p>Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</p>
-            </div>
-            <div>
-              <span>
-                <svg class="training__icon" width="25" height="25" aria-label="Рисунок ели.">
-                  <use xlink:href="img/sprite.svg#trainers-tree"></use>
-                </svg>
-              </span>
-              <p>Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</p>
-            </div>
-            <div>
-              <span>
-                <svg class="training__icon" width="25" height="25" aria-label="Рисунок горы.">
-                  <use xlink:href="img/sprite.svg#trainers-mountain"></use>
-                </svg>
-              </span>
-              <p>Разъяснение сложности
-                горных препятствий</p>
+            <div class="swiper-button swiper-button-next">
             </div>
           </div>
         </div>
+
+        <div class="training__education education">
+          <h3 class="education__subtitle">Процесс обучения</h3>
+          <ul class="education__list">
+            <li class="education__item">
+              <div>
+                <svg class="education__icon" width="25" height="25" aria-label="Рисунок карты.">
+                  <use xlink:href="img/sprite.svg#trainers-map"></use>
+                </svg>
+                <span>
+                  Изучение спортивного
+                  туристского движения
+                </span>
+              </div>
+            </li>
+            <li class="education__item">
+              <div>
+                <svg class="education__icon" width="25" height="25" aria-label="Рисунок ботинка.">
+                  <use xlink:href="img/sprite.svg#trainers-boots"></use>
+                </svg>
+                <span>
+                  Подготовка и&nbsp;техническое снаряжение в&nbsp;походах
+                </span>
+              </div>
+            </li>
+            <li class="education__item">
+              <div>
+                <svg class="education__icon" width="25" height="25" aria-label="Рисунок ели.">
+                  <use xlink:href="img/sprite.svg#trainers-tree"></use>
+                </svg>
+                <span>
+                  Подготовка и&nbsp;техническое снаряжение в&nbsp;походах
+                </span>
+              </div>
+            </li>
+            <li class="education__item">
+              <div>
+                <svg class="education__icon" width="25" height="25" aria-label="Рисунок горы.">
+                  <use xlink:href="img/sprite.svg#trainers-mountain"></use>
+                </svg>
+                <span>
+                  Разъяснение сложности
+                  горных препятствий
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
       </section>
       <section class="about" id="about">
         <div class="about__wrapper">
@@ -795,7 +839,7 @@
       <section class="reviews" id="reviews">
         <div class="reviews__wrapper">
           <h2 class="reviews__title">Отзывы</h2>
-          <div class="reviews__swiper swiper">
+          <div class="reviews__swiper swiper" data-id="swiper-reviews">
             <div class="reviews__swiper-wrapper swiper-wrapper">
               <div class="reviews__card swiper-slide" tabindex="0">
                 <picture>
@@ -915,16 +959,16 @@
             </div>
           </div>
 
-          <div class="reviews__swiper-button reviews__swiper-button--back">
+          <div class="swiper-button swiper-button-prev">
           </div>
-          <div class="reviews__swiper-button reviews__swiper-button--along">
+          <div class="swiper-button swiper-button-next">
           </div>
         </div>
       </section>
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="advantages__title">Преимущества</h2>
-          <div class="advantages__swiper swiper">
+          <div class="advantages__swiper swiper" data-id="swiper-advantages">
             <div class="advantages__swiper-wrapper swiper-wrapper">
               <div class="advantages__card swiper-slide" tabindex="0">
                 <span>
@@ -998,9 +1042,9 @@
             </div>
           </div>
 
-          <div class="advantages__swiper-button advantages__swiper-button--back">
+          <div class="swiper-button swiper-button-prev">
           </div>
-          <div class="advantages__swiper-button advantages__swiper-button--along">
+          <div class="swiper-button swiper-button-next">
           </div>
         </div>
       </section>
@@ -1010,7 +1054,7 @@
           <p class="gallery__description">
             Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото. Лучшие
             фотографии украсят этот раздел нашего сайта.</p>
-          <div class="gallery__swiper swiper">
+          <div class="gallery__swiper swiper" data-id="swiper-gallery">
             <div class="gallery__swiper-wrapper swiper-wrapper">
               <div class="gallery__card swiper-slide" tabindex="0">
                 <picture>
@@ -1163,9 +1207,9 @@
             </div>
           </div>
 
-          <div class="gallery__swiper-button gallery__swiper-button--back">
+          <div class="swiper-button swiper-button-prev">
           </div>
-          <div class="gallery__swiper-button gallery__swiper-button--along">
+          <div class="swiper-button swiper-button-next">
           </div>
         </div>
       </section>
@@ -1212,6 +1256,9 @@
           </div>
           <div class="contacts__map">
             <h2 class="visually-hidden">Мы на карте</h2>
+            <div class="map">
+              <div class="map__frame" id="map"></div>
+            </div>
           </div>
         </div>
       </section>

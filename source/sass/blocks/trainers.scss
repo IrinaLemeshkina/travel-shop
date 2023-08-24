@@ -1,12 +1,11 @@
-.tours {
+.training {
   margin: 0;
 }
 
-.tours__wrapper {
+.training__wrapper {
   position: relative;
-  margin: 0 auto;
-  max-width: 1366px;
-  width: 100%;
+  margin-bottom: 50px;
+  padding: 0 120px;
 
   @include vp-1199 {
     padding: 5px 0 55px;
@@ -17,9 +16,9 @@
   }
 }
 
-.tours__title {
+.training__title {
   margin: 0;
-  padding: 12px 50px 52px 103px;
+  padding: 12px 50px 52px 0;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 35px;
   font-weight: 800;
@@ -38,8 +37,8 @@
   }
 }
 
-.tours__title::after {
-  content: "Ближайшие туры";
+.training__title::after {
+  content: "Обучение";
   position: absolute;
   left: 0;
   font-size: 55px;
@@ -56,45 +55,57 @@
   }
 }
 
-.tours__swiper {
-  width: 1160px;
-  height: 452px;
-
-  @media (min-width: $vp-1200) and (max-width: 1360px) {
-    width: 1055px;
-  }
-
-  @include vp-1199 {
-    padding-left: 4px;
-    width: 576px;
-  }
-
-  @include vp-767 {
-    padding: 0;
-    width: 78%;
-    height: auto;
-  }
+.training__description {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 920px;
+  margin-bottom: 56px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-align: left;
+  color: #2d383f;
 }
 
-.tours__swiper-wrapper {
+.training__subtitle {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.training__swiper {
+  position: static;
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+  height: 100%;
+}
+
+.training__swiper-wrapper {
   margin-top: 60px;
 }
 
-.tours__card {
+.training__card {
   position: relative;
   margin: 0 auto;
   cursor: grab;
+  padding: 20px;
+  border: 1px solid $color-default-white;
+  box-shadow: 5px 0 40px 5px rgba(28, 51, 116, 0.1);
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.tours__card img {
+.training__card img {
   object-fit: cover;
   background-color: $color-default-white;
   width: 100%;
 }
 
-.tours .swiper-button {
+.training .swiper-button {
   position: absolute;
-  top: 6%;
+  top: 35%;
   width: 37px;
   height: 35px;
   background-repeat: no-repeat;
@@ -120,7 +131,7 @@
     }
 
     &--next {
-      right: 15px;
+      right: 10%;
     }
 
     &:hover,
@@ -130,7 +141,7 @@
   }
 
   &-prev {
-    left: 90%;
+    left: 82%;
     transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-left.svg");
     fill: $color-default-white;
@@ -150,7 +161,7 @@
   }
 
   &-next {
-    right: 27px;
+    right: 10%;
     transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-right.svg");
     fill: $color-default-white;
@@ -171,106 +182,37 @@
   }
 }
 
-.tours__info {
-  position: absolute;
-  padding: 120px 30px 20px;
-  top: 0;
+.training__info {
   width: 100%;
-  color: $color-default-white;
+  overflow-y: auto;
+}
+
+.info__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info__main svg {
+  text-align: right;
+  width: 24px;
+  height: 24px;
+  margin-top: 10px;
+}
+
+.training__name {
   font-size: 14px;
-  line-height: 28px;
-  overflow: scroll;
-  display: flex;
-  flex-direction: column;
-
-  @include vp-1199 {
-    width: 268px;
-  }
-
-  @include vp-767 {
-    padding: 20px 10px 28px;
-    width: 100%;
-  }
-}
-
-.info__top {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-}
-
-.info__day__icon {
-  position: relative;
-  top: -25px;
-  left: -30px;
-}
-
-.info__nigth__icon {
-  position: relative;
-  top: -25px;
-  left: -30px;
-}
-
-.info__central {
-  display: flex;
-  flex-direction: row;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0;
-  text-align: left;
-  padding-right: 60px;
-}
-
-.info__bottom {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-}
-
-.info__bottom > p {
-  margin: 0;
-}
-
-.info__place {
-  background-color: #0266c1;
-  width: 108px;
-  height: 29px;
-  padding-left: 40px;
-}
-
-.info__place__icon {
-  position: relative;
-  top: -30px;
-  left: -20px;
-}
-
-.tours__info > p {
-  position: relative;
-  left: -30px;
-  margin: 10px 0 2px;
-  font-weight: 700;
-  text-align: center;
-  font-size: 16px;
-  line-height: 6px;
-  letter-spacing: 0.03em;
-
-  @include vp-767 {
-    left: -20px;
-    margin: 40px 0 -5px 10px;
-  }
-}
-
-.tours__item {
-  position: relative;
-}
-
-.tours__button {
-  font-size: 16px;
   font-weight: 700;
   line-height: 16px;
-  letter-spacing: 0.04em;
-  text-align: center;
-  display: block;
-  margin-top: 30px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.training__about {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
 }
