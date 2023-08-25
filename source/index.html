@@ -1215,6 +1215,46 @@
                       alt="Фото похода." width="275" height="449" loading="lazy">
                   </picture>
                 </div>
+                <picture>
+                  <source media="(max-width: 767px)" type="image/webp"
+                    srcset="./img/gallery/left-top-horizontal.webp 1x, ./img/gallery/left-top-horizontal@2x.webp 2x"
+                    width="172" height="103">
+                  <source media="(max-width: 1199px)" type="image/webp"
+                    srcset="./img/gallery/left-top-horizontal.webp 1x, ./img/gallery/left-top-horizontal@2x.webp 2x"
+                    width="298" height="179">
+                  <source media="(min-width: 1200px)" type="image/webp"
+                    srcset="./img/gallery/left-top-horizontal.webp 1x, ./img/gallery/left-top-horizontal@2x.webp 2x"
+                    width="298" height="179">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/gallery/left-top-horizontal.jpg 1x, ./img/gallery/left-top-horizontal@2x.jpg 2x"
+                    width="172" height="103">
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/gallery/left-top-horizontal.jpg 1x, ./img/gallery/left-top-horizontal@2x.jpg 2x"
+                    width="298" height="179">
+                  <img src="./img/gallery/left-top-horizontal.jpg"
+                    srcset="./img/gallery/left-top-horizontal.jpg 1x, ./img/gallery/left-top-horizontal@2x.jpg 2x"
+                    alt="Фото похода." width="298" height="179" loading="lazy">
+                </picture>
+                <picture>
+                  <source media="(max-width: 767px)" type="image/webp"
+                    srcset="./img/gallery/left-bottom-horizontal.webp 1x, ./img/gallery/left-bottom-horizontal@2x.webp 2x"
+                    width="172" height="153">
+                  <source media="(max-width: 1199px)" type="image/webp"
+                    srcset="./img/gallery/left-bottom-horizontal.webp 1x, ./img/gallery/left-bottom-horizontal@2x.webp 2x"
+                    width="298" height="265">
+                  <source media="(min-width: 1200px)" type="image/webp"
+                    srcset="./img/gallery/left-bottom-horizontal.webp 1x, ./img/gallery/left-bottom-horizontal@2x.webp 2x"
+                    width="298" height="265">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/gallery/left-bottom-horizontal.jpg 1x, ./img/gallery/left-bottom-horizontal@2x.jpg 2x"
+                    width="172" height="153">
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/gallery/left-bottom-horizontal.jpg 1x, ./img/gallery/left-bottom-horizontal@2x.jpg 2x"
+                    width="298" height="265">
+                  <img src="./img/gallery/left-bottom-horizontal.jpg"
+                    srcset="./img/gallery/left-bottom-horizontal.jpg 1x, ./img/trainers/anna@2x.jpg 2x"
+                    alt="Фото похода." width="298" height="265" loading="lazy">
+                </picture>
               </div>
             </div>
 
@@ -1230,47 +1270,52 @@
           <h2 class="form__title">Остались вопросы?</h2>
           <p class="form__description">Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
           <form action="https://echo.htmlacademy.ru/." method="get">
-            <div class="form__name" data-validate-type="text" data-limitation="name" data-on-input-validate
-              data-required>
-              <label for="guest-name">
-                <input type="text" id="guest-name" name="name" minlength="1" placeholder="Как к вам обращаться?"
-                  required autocomplete="off" aria-label="Имя">
-              </label>
+            <div class="form__action">
+              <div class="form__name" data-validate-type="text" data-limitation="name" data-on-input-validate
+                data-required>
+                <label for="guest-name">
+                  <input type="text" id="guest-name" name="name" minlength="1" placeholder="Как к вам обращаться?"
+                    required autocomplete="off" aria-label="Имя">
+                </label>
+              </div>
+              <div class="form__phone" data-validate-type="phone" data-on-input-validate data-required>
+                <label for="guest-tel">
+                  <input type="tel" id="guest-tel" name="phone" placeholder="Телефон" required autocomplete="off"
+                    aria-label="Телефон">
+                </label>
+              </div>
+              <button class="form__submit btn">Отправить</button>
             </div>
-            <div class="form__phone" data-validate-type="phone" data-on-input-validate data-required>
-              <label for="guest-tel">
-                <input type="tel" id="guest-tel" name="phone" placeholder="Телефон" required autocomplete="off"
-                  aria-label="Телефон">
-              </label>
-            </div>
-            <button class="form__submit btn">Отправить</button>
           </form>
         </div>
       </section>
       <section class="contacts" id="contacts">
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2>
-          <p class="contacts__description">Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам
-            в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
-          <div class="contacts__list">
-            <div class="contacts__item contacts__item--tell">
-              <h3>Телефон:</h3>
-              <a href="tel:88005555555">8 983 745 45 45</a>
-            </div>
-            <div class="contacts__item contacts__item--mail">
-              <h3>Email:</h3>
-              <a href="mailto:omsk@supergym.ru">info@lifetour.com</a>
-            </div>
-            <div class="contacts__item contacts__item--adress">
-              <h3>Адрес:</h3>
-              <p>г. Москва, пр-т Мира, д. 14, офис 101</p>
+          <div class="contacts__text">
+            <h2 class="contacts__title">Контакты</h2>
+            <p class="contacts__description">Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите
+              к&nbsp;нам
+              в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
+            <div class="contacts__list">
+              <div class="contacts__item contacts__item--tell">
+                <h3>Телефон:</h3>
+                <a href="tel:88005555555">8 983 745 45 45</a>
+              </div>
+              <div class="contacts__item contacts__item--mail">
+                <h3>Email:</h3>
+                <a href="mailto:omsk@supergym.ru">info@lifetour.com</a>
+              </div>
+              <div class="contacts__item contacts__item--adress">
+                <h3>Адрес:</h3>
+                <p>г. Москва, пр-т Мира, д. 14, офис 101</p>
+              </div>
             </div>
           </div>
-          <div class="contacts__map">
+          <div class="contacts__map-container">
             <h2 class="visually-hidden">Мы на карте</h2>
-            <!--<div class="map">
+            <div class="map">
               <div class="map__frame" id="map"></div>
-            </div>-->
+            </div>
           </div>
         </div>
       </section>
@@ -1283,25 +1328,25 @@
               <use xlink:href="img/sprite.svg#logotype-gray"></use>
             </svg>
           </a>
-          <nav class="footer__navigation navigation">
-            <div class="navigation__list navigation__part">
-              <div class="navigation__item">
-                <a class="navigation__link" href="#tours">Туры</a>
+          <nav class="footer__nav nav">
+            <div class="nav__list nav__part">
+              <div class="nav_item">
+                <a class="nav__link" href="#tours">Туры</a>
               </div>
-              <div class="navigation__item">
-                <a class="navigation__link" href="#trainers">Обучение</a>
+              <div class="nav_item">
+                <a class="nav_link" href="#trainers">Обучение</a>
               </div>
-              <div class="navigation__item">
-                <a class="navigation__link" href="#about">О нас</a>
+              <div class="nav_item">
+                <a class="nav__link" href="#about">О нас</a>
               </div>
-              <div class="navigation__item">
-                <a class="navigation__link" href="#reviews">Отзывы</a>
+              <div class="nav__item">
+                <a class="nav_link" href="#reviews">Отзывы</a>
               </div>
-              <div class="navigation__item">
-                <a class="navigation__link" href="#gallery">Фотографии</a>
+              <div class="nav__item">
+                <a class="nav_link" href="#gallery">Фотографии</a>
               </div>
-              <div class="navigation__item">
-                <a class="navigation__link" href="#contacts">Контакты</a>
+              <div class="nav__item">
+                <a class="nav__link" href="#contacts">Контакты</a>
               </div>
             </div>
           </nav>
@@ -1314,7 +1359,7 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
+                <svg class="social__link__icon" width="16" height="9" aria-label="Иконка группы Вконтакте.">
                   <use xlink:href="img/sprite.svg#vk"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Вконтакте</span>
@@ -1322,7 +1367,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--ok" href="#">
-                <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
+                <svg class="social__link__icon" width="9" height="16" aria-label="Иконка группы Вконтакте.">
                   <use xlink:href="img/sprite.svg#ok"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Одноклассниках</span>
@@ -1330,7 +1375,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--reddit" href="#">
-                <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
+                <svg class="social__link__icon" width="14" height="15" aria-label="Иконка группы Вконтакте.">
                   <use xlink:href="img/sprite.svg#reddit"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Реддит</span>
@@ -1338,6 +1383,9 @@
             </li>
           </ul>
         </div>
+        <span class="confidancial">
+          <a class="confidancial__link" href="#">Политика конфиденциальности</a>
+        </span>
       </div>
     </footer>
   </div>

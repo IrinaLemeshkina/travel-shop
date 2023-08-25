@@ -241,3 +241,11 @@
     height: 34px;
   }
 }
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 0;
+}
