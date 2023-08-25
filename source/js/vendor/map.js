@@ -1,13 +1,9 @@
-const map = L.map('map').setView([55.811953, 37.636374], 13);
+let map = L.map('map').setView([59.968331, 30.317547], 17);
+let leaflet = L.icon({
+  iconUrl: './img/marker-icon.png',
+  iconSize: [38, 50],
+  iconAnchor: [19, 50],
+});
+let marker = L.marker([59.968331, 30.317547], { icon: leaflet }).addTo(map);
 
-const showMap = () => {
-  if (map) {
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    L.marker([55.811953, 37.636374]).addTo(map)
-  }
-};
-
-export {showMap};
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png?{foo}', { foo: 'bar' }).addTo(map);
