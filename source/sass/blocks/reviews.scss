@@ -1,24 +1,23 @@
-.training {
+.reviews {
   margin: 0;
 }
 
-.training__wrapper {
+.reviews__wrapper {
   position: relative;
-  margin-bottom: 50px;
-  padding: 0 120px;
+  padding: 50px 0 90px 120px;
 
   @include vp-1199 {
-    padding: 5px 0 55px;
+    padding-top: 60px;
   }
 
   @include vp-767 {
-    padding: 6px 15px 65px;
+    padding: 0 0 30px 0;
   }
 }
 
-.training__title {
-  margin: 0;
-  padding: 12px 50px 52px 0;
+.reviews__title {
+  margin: 0 auto;
+  margin-bottom: 25px;
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
@@ -33,13 +32,15 @@
   @include vp-767 {
     font-size: 22px;
     line-height: 22px;
+    margin-bottom: 30px;
   }
 }
 
-.training__title::after {
-  content: "Обучение";
+.reviews__title::after {
+  content: "Отзывы";
   position: absolute;
-  left: 0;
+  left: 115px;
+  top: 50px;
   font-size: 55px;
   font-weight: 800;
   line-height: 1;
@@ -54,55 +55,50 @@
   }
 }
 
-.training__description {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  max-width: 920px;
-  margin-bottom: 56px;
-  font-weight: 400;
-  letter-spacing: 0;
-  text-align: left;
-  color: #2d383f;
+.reviews__swiper {
+  overflow: visible;
+  z-index: 2;
 }
 
-.training__subtitle {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 21px;
-  letter-spacing: 0;
-  text-align: left;
-}
-
-.training__swiper {
-  position: static;
-  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
-  height: 100%;
-}
-
-.training__swiper-wrapper {
-  margin-top: 60px;
-}
-
-.training__card {
-  position: relative;
+.reviews__card {
   margin: 0 auto;
   cursor: grab;
-  padding: 20px;
   border: 1px solid $color-default-white;
   box-shadow: 5px 0 40px 5px rgba(28, 51, 116, 0.1);
+  background-color: $color-default-white;
   height: auto;
-  display: flex;
-  flex-direction: column;
+  width: 790px;
+  display: grid;
+  grid-template-columns: 258px auto;
+  gap: 30px;
+
+  @include vp-1199 {
+    width: 560px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-bottom: 15px;
+  }
 }
 
-.training__card img {
+.reviews__card img {
   object-fit: cover;
   background-color: $color-default-white;
-  width: 100%;
+  min-width: 258px;
+
+  @include vp-1199 {
+    min-width: 186px;
+  }
+
+  @include vp-767 {
+    min-width: 100%;
+  }
 }
 
-.training .swiper-button {
+.treviews .swiper-button {
   position: absolute;
   top: 35%;
   width: 37px;
@@ -179,39 +175,4 @@
       fill: #ffffff;
     }
   }
-}
-
-.training__info {
-  width: 100%;
-  overflow-y: auto;
-}
-
-.info__main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.info__main svg {
-  text-align: right;
-  width: 24px;
-  height: 24px;
-  margin-top: 10px;
-}
-
-.training__name {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0;
-  text-align: left;
-}
-
-.training__about {
-  margin: 0;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0;
-  text-align: left;
 }
