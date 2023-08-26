@@ -4,7 +4,7 @@
 
 .reviews__wrapper {
   position: relative;
-  padding: 50px 0 90px 120px;
+  padding: 42px 0 90px 120px;
 
   @include vp-1199 {
     padding-top: 60px;
@@ -16,8 +16,7 @@
 }
 
 .reviews__title {
-  margin: 0 auto;
-  margin-bottom: 25px;
+  margin: 15px auto 25px;
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
@@ -67,10 +66,10 @@
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   background-color: $color-default-white;
   height: auto;
-  width: 790px;
   padding: 20px;
   display: grid;
-  grid-template-columns: 285px auto;
+  grid-template-columns: 285px 450px;
+  max-width: 788px;
 
   @include vp-1199 {
     width: 560px;
@@ -92,7 +91,7 @@
 
 .reviews .swiper-button {
   position: absolute;
-  top: -10%;
+  top: -14.5%;
   width: 37px;
   height: 35px;
   background-repeat: no-repeat;
@@ -128,7 +127,7 @@
   }
 
   &-prev {
-    left: 82%;
+    left: 89%;
     transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-left.svg");
     fill: $color-default-white;
@@ -148,7 +147,7 @@
   }
 
   &-next {
-    right: 10%;
+    right: 4.5%;
     transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-right.svg");
     fill: $color-default-white;
@@ -167,4 +166,37 @@
       fill: #ffffff;
     }
   }
+}
+
+.reviews__info {
+  display: grid;
+  grid-template-rows: auto 42px;
+  height: 250px;
+  justify-content: space-around;
+}
+
+.reviews__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 0 0 0 3px;
+}
+
+.reviews__autor p {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.reviews__autor span {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  letter-spacing: 0;
+  text-align: left;
 }
