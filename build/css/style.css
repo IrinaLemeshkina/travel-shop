@@ -4494,7 +4494,7 @@ button,
 
 .advantages__wrapper {
   position: relative;
-  padding: 45px 0 110px 120px;
+  padding: 45px 0 110px 0;
 }
 @media (max-width: 1199px) {
   .advantages__wrapper {
@@ -4503,13 +4503,13 @@ button,
 }
 
 .advantages__title {
-  margin: 0 auto;
-  margin-bottom: 30px;
+  margin: 0 auto 45px;
+  padding: 5px 0 0 60px;
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
   letter-spacing: 0;
-  text-align: left;
+  text-align: center;
 }
 @media (max-width: 1199px) {
   .advantages__title {
@@ -4558,9 +4558,9 @@ button,
   cursor: grab;
   border: 1px solid rgba(2, 102, 193, 0.1);
   background-color: #ffffff;
-  width: 380px;
+  max-width: 380px;
   height: auto;
-  padding: 40px 20px;
+  padding: 40px 20px 20px;
 }
 @media (max-width: 1199px) {
   .advantages__card {
@@ -4576,7 +4576,7 @@ button,
 
 .advantages .swiper-button {
   position: absolute;
-  top: -10%;
+  top: 123.5%;
   width: 37px;
   height: 35px;
   background-repeat: no-repeat;
@@ -4594,7 +4594,7 @@ button,
 }
 @media (max-width: 767px) {
   .advantages .swiper-button {
-    top: 58%;
+    top: 3%;
     width: 20px;
     height: 20px;
     background-size: 10px 19px;
@@ -4610,7 +4610,7 @@ button,
   }
 }
 .advantages .swiper-button-prev {
-  left: 82%;
+  left: 49.5%;
   -webkit-transform: translate(0, -10%);
       -ms-transform: translate(0, -10%);
           transform: translate(0, -10%);
@@ -4628,7 +4628,7 @@ button,
   background-color: #1c3374;
 }
 .advantages .swiper-button-next {
-  right: 10%;
+  right: 45%;
   -webkit-transform: translate(0, -10%);
       -ms-transform: translate(0, -10%);
           transform: translate(0, -10%);
@@ -4645,6 +4645,32 @@ button,
   background-size: 37px 35px;
   background-color: #1c3374;
   fill: #ffffff;
+}
+
+.advantages__icon {
+  display: block;
+  border: #0266c1 1px solid;
+  width: 54px;
+  height: 54px;
+  padding: 14.5px;
+  margin: 0 auto 30px;
+}
+
+.advantages__subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.advantages__direction {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: center;
 }
 
 .gallery {
