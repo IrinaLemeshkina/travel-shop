@@ -125,7 +125,7 @@
   background-size: contain;
   background-color: #1e6a9f;
   bottom: 105px;
-  right: 0;
+  right: 15px;
   width: 482px;
   height: 317px;
 
@@ -211,8 +211,8 @@
 .hero__image-wrapper-left {
   width: 308px;
   height: 407px;
-  right: 100px;
-  top: 170px;
+  right: 115px;
+  top: 100px;
 
   @include vp-1199 {
     right: 370px;
@@ -223,8 +223,8 @@
 .hero__image-wrapper-right {
   width: 277px;
   height: 366px;
-  right: 10px;
-  top: 170px;
+  right: 15px;
+  top: 195px;
 
   @include vp-1199 {
     right: 180px;
@@ -237,7 +237,7 @@
   width: 340px;
   height: 220px;
   bottom: 200px;
-  right: 0;
+  right: 15px;
 
   @include vp-1199 {
     position: relative;
@@ -279,7 +279,7 @@
   text-align: right;
   bottom: 25px;
   left: auto;
-  right: -7px;
+  right: 6px;
 
   @include vp-1199 {
     text-align: center;

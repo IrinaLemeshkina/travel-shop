@@ -1,9 +1,9 @@
 .education {
   position: relative;
   margin: 0 auto;
-  max-width: 1366px;
   width: 100%;
-  padding: 0 120px;
+  padding: 0;
+  border-bottom: rgba(2, 102, 193, 0.2) solid 1px;
 
   @include vp-1199 {
     padding: 5px 0 55px;
@@ -20,9 +20,9 @@
   flex-direction: row;
   padding: 0;
   padding-bottom: 32px;
-  justify-content: space-between;
   border-bottom: 1px solid rgba(2, 102, 193, 0.2);
-  margin-bottom: 0;
+  margin: 16px 30px 0 120px;
+  align-items: center;
 }
 
 .education__item {
@@ -32,12 +32,21 @@
   letter-spacing: 0;
   text-align: left;
   max-width: 275px;
+  display: flex;
+  align-items: center;
+  margin-right: 41px;
+}
+
+.education__item:last-of-type {
+  @include vp-1199 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
 }
 
 .education__subtitle {
   font-size: 21px;
   line-height: 1;
-  margin-bottom: 42px;
+  margin: 0 0 40px 120px;
 }
 
 .training__education div::before {
@@ -50,3 +59,18 @@
   border-radius: 50%;
 }
 
+.education span {
+  max-width: 277px;
+
+  @include vp-1199 {
+    max-width: 220px;
+  }
+
+  @include vp-767 {
+    max-width: 190px;
+  }
+}
+
+.education__icon {
+  margin-right: 15px;
+}

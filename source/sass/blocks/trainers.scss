@@ -1,11 +1,12 @@
 .training {
   margin: 0;
+  margin-bottom: 50px;
 }
 
 .training__wrapper {
   position: relative;
-  margin-bottom: 50px;
-  padding: 0 120px;
+  margin: 50px 0;
+  padding: 65px 120px 0;
 
   @include vp-1199 {
     padding: 5px 0 55px;
@@ -18,7 +19,7 @@
 
 .training__title {
   margin: 0;
-  padding: 12px 50px 52px 0;
+  padding: 12px 50px 15px 0;
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
@@ -64,6 +65,7 @@
   letter-spacing: 0;
   text-align: left;
   color: #2d383f;
+  padding-right: 50px;
 }
 
 .training__subtitle {
@@ -78,17 +80,18 @@
   position: static;
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   height: 100%;
+  width: 1200px;
 }
 
 .training__swiper-wrapper {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .training__card {
   position: relative;
   margin: 0 auto;
   cursor: grab;
-  padding: 20px;
+  padding: 20px 18px 20px 20px;
   border: 1px solid $color-default-white;
   box-shadow: 5px 0 40px 5px rgba(28, 51, 116, 0.1);
   height: auto;
@@ -104,7 +107,7 @@
 
 .training .swiper-button {
   position: absolute;
-  top: 35%;
+  top: 38.5%;
   width: 37px;
   height: 35px;
   background-repeat: no-repeat;
@@ -140,7 +143,7 @@
   }
 
   &-prev {
-    left: 82%;
+    left: 90%;
     transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-left.svg");
     fill: $color-default-white;
@@ -160,7 +163,7 @@
   }
 
   &-next {
-    right: 10%;
+    right: 4.4%;
     transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-right.svg");
     fill: $color-default-white;
@@ -196,7 +199,7 @@
   text-align: right;
   width: 24px;
   height: 24px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .training__name {
@@ -205,6 +208,7 @@
   line-height: 16px;
   letter-spacing: 0;
   text-align: left;
+  margin-top: 16px;
 }
 
 .training__about {
