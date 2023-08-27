@@ -10361,13 +10361,13 @@ const swiper = () => {
 
   swiperBlock.on('transitionEnd', function(e) {
     if (this.realIndex == 0) {
-      document.querySelector(".hero").style.backgroundImage = "url('../img/hero1.jpg')";
+      document.querySelector(".hero").style.backgroundImage = "url('../img/hero/caucasus-photo.jpg')";
     }
     if (this.realIndex == 1) {
-      document.querySelector(".hero").style.backgroundImage = "url('../img/hero2.jpg')";
+      document.querySelector(".hero").style.backgroundImage = "url('../img/hero/kamchatka-photo.jpg')";
     }
     if (this.realIndex == 2) {
-      document.querySelector(".hero").style.backgroundImage = "url('../img/hero3.jpg')";
+      document.querySelector(".hero").style.backgroundImage = "url('../img/hero/altai-photo.jpg')";
     }
   });
 

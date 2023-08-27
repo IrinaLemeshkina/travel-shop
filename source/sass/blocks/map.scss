@@ -4,6 +4,7 @@
 }
 
 .map__frame {
+  background-image: image-set("../img/contacts/map.jpg" 1x, "../img/contacts/map@2x.jpg" 2x);
   position: relative;
   border: none;
   display: block;

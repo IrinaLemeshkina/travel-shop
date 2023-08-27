@@ -29,6 +29,26 @@
   margin-bottom: 55px;
 }
 
+.about__title::after {
+  content: "О нас";
+  position: absolute;
+  left: 55%;
+  top: 60px;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.03;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+  }
+}
+
+
 .about__subtitle {
   font-size: 21px;
   font-weight: 700;

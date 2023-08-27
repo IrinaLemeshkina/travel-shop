@@ -42,10 +42,11 @@
   }
 }
 
-.contacts_title::after {
+.contacts__title::after {
   content: "Контакты";
   position: absolute;
-  left: 0;
+  left: 120px;
+  top: 18px;
   font-size: 55px;
   font-weight: 800;
   line-height: 1;

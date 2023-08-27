@@ -3523,8 +3523,8 @@ button,
 .tours__title::after {
   content: "Ближайшие туры";
   position: absolute;
-  left: 115px;
-  top: 110px;
+  left: 0;
+  top: 30px;
   font-size: 55px;
   font-weight: 800;
   line-height: 1;
@@ -3895,7 +3895,8 @@ button,
 .training__title::after {
   content: "Обучение";
   position: absolute;
-  left: 0;
+  left: 110px;
+  top: 60px;
   font-size: 55px;
   font-weight: 800;
   line-height: 1;
@@ -4218,6 +4219,27 @@ button,
   margin-bottom: 55px;
 }
 
+.about__title::after {
+  content: "О нас";
+  position: absolute;
+  left: 55%;
+  top: 60px;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.03;
+}
+@media screen and (max-width: 1199px) {
+  .about__title::after {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__title::after {
+    font-size: 26px;
+  }
+}
+
 .about__subtitle {
   font-size: 21px;
   font-weight: 700;
@@ -4301,7 +4323,7 @@ button,
   content: "Отзывы";
   position: absolute;
   left: 115px;
-  top: 50px;
+  top: 45px;
   font-size: 55px;
   font-weight: 800;
   line-height: 1;
@@ -4475,6 +4497,8 @@ button,
 }
 
 .map__frame {
+  background-image: -webkit-image-set(url("../img/contacts/map.jpg") 1x, url("../img/contacts/map@2x.jpg") 2x);
+  background-image: image-set("../img/contacts/map.jpg" 1x, "../img/contacts/map@2x.jpg" 2x);
   position: relative;
   border: none;
   display: block;
@@ -4536,8 +4560,8 @@ button,
 .advantages__title::after {
   content: "Преимущества";
   position: absolute;
-  left: 0;
-  top: 50px;
+  left: 36%;
+  top: 35px;
   font-size: 55px;
   font-weight: 800;
   line-height: 1;
@@ -4733,10 +4757,10 @@ button,
 }
 
 .gallery__title::after {
-  content: "Отзывы";
+  content: "Фотогалерея";
   position: absolute;
   left: 115px;
-  top: 50px;
+  top: 67px;
   font-size: 55px;
   font-weight: 800;
   line-height: 1;
@@ -5111,22 +5135,23 @@ button,
   }
 }
 
-.contacts_title::after {
+.contacts__title::after {
   content: "Контакты";
   position: absolute;
-  left: 0;
+  left: 120px;
+  top: 18px;
   font-size: 55px;
   font-weight: 800;
   line-height: 1;
   opacity: 0.03;
 }
 @media screen and (max-width: 1199px) {
-  .contacts_title::after {
+  .contacts__title::after {
     font-size: 40px;
   }
 }
 @media screen and (max-width: 767px) {
-  .contacts_title::after {
+  .contacts__title::after {
     font-size: 26px;
   }
 }
