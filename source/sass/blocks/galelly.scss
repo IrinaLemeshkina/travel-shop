@@ -4,7 +4,7 @@
 
 .gallery__wrapper {
   position: relative;
-  padding: 50px 0 90px 0;
+  padding: 50px 0 0 0;
 
   @include vp-1199 {
     padding-top: 60px;
@@ -85,7 +85,7 @@
   background-color: $color-default-white;
   height: auto;
   width: 790px;
-  padding: 20px 0;
+  padding: 20px 0 0;
   display: grid;
   grid-template-columns: 275px 298px;
   grid-template-rows: 179px 265px;

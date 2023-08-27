@@ -861,7 +861,8 @@
                       около 30&nbsp;км, физически я&nbsp;устала на&nbsp;18&nbsp;км, поэтому не&nbsp;была уверена,
                       пройду&nbsp;ли до&nbsp;конца. Но я справилась. Второй день прошел легче, чем ожидала,
                       видимо
-                      организм уже привык.</p><p>Спасибо ребятам, инструкторам за&nbsp;помощь и&nbsp;поддержку! Я&nbsp;была
+                      организм уже привык.</p>
+                    <p>Спасибо ребятам, инструкторам за&nbsp;помощь и&nbsp;поддержку! Я&nbsp;была
                       рада
                       быть в&nbsp;такой компании.</p>
                   </div>
@@ -890,19 +891,19 @@
                 </picture>
                 <div class="reviews__info info">
                   <div class="reviews__text">
-                  <p>Это был опыт, изменивший мою жизнь! Думала, не&nbsp;справлюсь, но&nbsp;все
-                    получилось! Дух захватывает, когда наконец-то, преодолев все трудности и&nbsp;препятствия,
-                    взбираешься
-                    на&nbsp;вершину.</p>
+                    <p>Это был опыт, изменивший мою жизнь! Думала, не&nbsp;справлюсь, но&nbsp;все
+                      получилось! Дух захватывает, когда наконец-то, преодолев все трудности и&nbsp;препятствия,
+                      взбираешься
+                      на&nbsp;вершину.</p>
                     <p>У&nbsp;нас собралась потрясающая команда. Все друг друга поддерживали,
-                    по&nbsp;вечерам
-                    мы&nbsp;сидели вместе у&nbsp;костра и&nbsp;пели песни. Обязательно повторю такое приключение!</p>
+                      по&nbsp;вечерам
+                      мы&nbsp;сидели вместе у&nbsp;костра и&nbsp;пели песни. Обязательно повторю такое приключение!</p>
                   </div>
                   <div class="reviews__autor">
                     <p>Елена Пирогова</p>
                     <span>37 лет, Тюмень</span>
                   </div>
-                  </div>
+                </div>
               </div>
             </div>
 
@@ -933,7 +934,7 @@
               </div>
               <div class="advantages__card swiper-slide" tabindex="0">
                 <div class="advantages__icon">
-                  <svg  width="25" height="25" aria-label="Иконка короны.">
+                  <svg width="25" height="25" aria-label="Иконка короны.">
                     <use xlink:href="img/sprite.svg#advantages-crown"></use>
                   </svg>
                 </div>
@@ -961,7 +962,7 @@
               </div>
               <div class="advantages__card swiper-slide" tabindex="0">
                 <div class="advantages__icon">
-                  <svg  width="25" height="25" aria-label="Иконка маршрута.">
+                  <svg width="25" height="25" aria-label="Иконка маршрута.">
                     <use xlink:href="img/sprite.svg#advantages-route"></use>
                   </svg>
                 </div>
@@ -1209,25 +1210,28 @@
         </div>
       </section>
       <section class="form">
-        <div class="form__wrapper">
+        <div class="form__wrapper" data-form-validate="data-form-validate" data-callback="base">
           <h2 class="form__title">Остались вопросы?</h2>
           <p class="form__description">Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
           <form action="https://echo.htmlacademy.ru/." method="get">
             <div class="form__action">
-              <div class="form__name" data-validate-type="text" data-limitation="name" data-on-input-validate
-                data-required>
+              <div class="form__input custom-input" data-validate-type="text" data-limitation="name" data-on-input-validate
+                data-required data-message-base="Поле обязательно к заполнению"
+                data-message-extra="Проверьте корректность заполнения">
                 <label for="guest-name">
                   <input type="text" id="guest-name" name="name" minlength="1" placeholder="Как к вам обращаться?"
                     required autocomplete="off" aria-label="Имя">
                 </label>
               </div>
-              <div class="form__phone" data-validate-type="phone" data-on-input-validate data-required>
+              <div class="form__input custom-input" data-validate-type="phone" data-on-input-validate data-required
+                data-message-base="Поле обязательно к заполнению"
+                data-message-extra="Проверьте корректность заполнения">
                 <label for="guest-tel">
                   <input type="tel" id="guest-tel" name="phone" placeholder="Телефон" required autocomplete="off"
                     aria-label="Телефон">
                 </label>
               </div>
-              <button class="form__submit btn">Отправить</button>
+              <button class="form__submit btn" type="submit">Отправить</button>
             </div>
           </form>
         </div>
