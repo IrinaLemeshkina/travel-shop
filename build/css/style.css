@@ -1477,16 +1477,16 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 /* visual tweaks */
 .leaflet-container {
-  background: #ddd;
+  background: #dddddd;
   outline-offset: 1px;
 }
 
 .leaflet-container a {
-  color: #0078A8;
+  color: #0078a8;
 }
 
 .leaflet-zoom-box {
-  border: 2px dotted #38f;
+  border: 2px dotted #3388ff;
   background: rgba(255, 255, 255, 0.5);
 }
 
@@ -1506,15 +1506,15 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .leaflet-bar a {
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
+  background-color: #ffffff;
+  border-bottom: 1px solid #cccccc;
   width: 26px;
   height: 26px;
   line-height: 26px;
   display: block;
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
 .leaflet-bar a,
@@ -1543,7 +1543,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-bar a.leaflet-disabled {
   cursor: default;
   background-color: #f4f4f4;
-  color: #bbb;
+  color: #bbbbbb;
 }
 
 .leaflet-touch .leaflet-bar a {
@@ -1577,7 +1577,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-control-layers {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-  background: #fff;
+  background: #ffffff;
   border-radius: 5px;
 }
 
@@ -1609,8 +1609,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .leaflet-control-layers-expanded {
   padding: 6px 10px 6px 6px;
-  color: #333;
-  background: #fff;
+  color: #333333;
+  background: #ffffff;
 }
 
 .leaflet-control-layers-scrollbar {
@@ -1644,7 +1644,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 /* attribution and scale controls */
 .leaflet-container .leaflet-control-attribution {
-  background: #fff;
+  background: #ffffff;
   background: rgba(255, 255, 255, 0.8);
   margin: 0;
 }
@@ -1681,7 +1681,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .leaflet-control-scale-line {
-  border: 2px solid #777;
+  border: 2px solid #777777;
   border-top: none;
   line-height: 1.1;
   padding: 2px 5px 1px;
@@ -1689,17 +1689,17 @@ svg.leaflet-image-layer.leaflet-interactive path {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: rgba(255, 255, 255, 0.8);
-  text-shadow: 1px 1px #fff;
+  text-shadow: 1px 1px #ffffff;
 }
 
 .leaflet-control-scale-line:not(:first-child) {
-  border-top: 2px solid #777;
+  border-top: 2px solid #777777;
   border-bottom: none;
   margin-top: -2px;
 }
 
 .leaflet-control-scale-line:not(:first-child):not(:last-child) {
-  border-bottom: 2px solid #777;
+  border-bottom: 2px solid #777777;
 }
 
 .leaflet-touch .leaflet-control-attribution,
@@ -1765,8 +1765,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .leaflet-popup-content-wrapper,
 .leaflet-popup-tip {
-  background: white;
-  color: #333;
+  background: #ffffff;
+  color: #333333;
   -webkit-box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
           box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
 }
@@ -1809,13 +1809,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-oldie .leaflet-control-layers,
 .leaflet-oldie .leaflet-popup-content-wrapper,
 .leaflet-oldie .leaflet-popup-tip {
-  border: 1px solid #999;
+  border: 1px solid #999999;
 }
 
 /* div icon */
 .leaflet-div-icon {
-  background: #fff;
-  border: 1px solid #666;
+  background: #ffffff;
+  border: 1px solid #666666;
 }
 
 /* Tooltip */
@@ -1823,10 +1823,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-tooltip {
   position: absolute;
   padding: 6px;
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 3px;
-  color: #222;
+  color: #222222;
   white-space: nowrap;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1871,14 +1871,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-tooltip-top:before {
   bottom: 0;
   margin-bottom: -12px;
-  border-top-color: #fff;
+  border-top-color: #ffffff;
 }
 
 .leaflet-tooltip-bottom:before {
   top: 0;
   margin-top: -12px;
   margin-left: -6px;
-  border-bottom-color: #fff;
+  border-bottom-color: #ffffff;
 }
 
 .leaflet-tooltip-left {
@@ -1898,13 +1898,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-tooltip-left:before {
   right: 0;
   margin-right: -12px;
-  border-left-color: #fff;
+  border-left-color: #ffffff;
 }
 
 .leaflet-tooltip-right:before {
   left: 0;
   margin-left: -12px;
-  border-right-color: #fff;
+  border-right-color: #ffffff;
 }
 
 /* Printing */
@@ -1977,7 +1977,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-family: "Montserrat", "Arial", sans-serif;
-  color: #2D383F;
+  color: #2d383f;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1990,7 +1990,7 @@ body {
 }
 
 a {
-  color: #2D383F;
+  color: #2d383f;
   text-decoration: none;
 }
 
@@ -2008,7 +2008,7 @@ textarea {
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
           box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #2D383F;
+  -webkit-text-fill-color: #2d383f;
 }
 
 input,
@@ -2940,7 +2940,7 @@ button,
 .navigation--opened .navigation__toggle {
   background-image: url("../img/sprite/close.svg");
   background-size: 22px 22px;
-  fill: #2D383F;
+  fill: #2d383f;
   padding-left: 0;
   cursor: pointer;
 }
@@ -2967,7 +2967,7 @@ button,
 }
 @media (max-width: 1199px) {
   .navigation--opened a {
-    color: #2D383F;
+    color: #2d383f;
     font-weight: 700;
     letter-spacing: 0.64px;
     text-transform: uppercase;
@@ -3485,6 +3485,7 @@ button,
   margin: 0 auto;
   padding: 80px 40px 20px 110px;
   width: 100%;
+  max-width: 1440px;
 }
 @media (max-width: 1199px) {
   .tours__wrapper {
@@ -3855,6 +3856,8 @@ button,
   position: relative;
   margin: 50px auto;
   padding: 65px 120px 0;
+  width: 100%;
+  max-width: 1440px;
 }
 @media (max-width: 1199px) {
   .training__wrapper {
@@ -4088,6 +4091,7 @@ button,
   position: relative;
   margin: 0 auto;
   width: 100%;
+  max-width: 1440px;
   padding: 0;
   border-bottom: rgba(2, 102, 193, 0.2) solid 1px;
 }
@@ -4113,7 +4117,6 @@ button,
           flex-direction: row;
   padding: 0;
   padding-bottom: 32px;
-  border-bottom: 1px solid rgba(2, 102, 193, 0.2);
   margin: 16px 30px 0 120px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -4188,6 +4191,7 @@ button,
   position: relative;
   margin: 0 auto;
   width: 100%;
+  max-width: 1440px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 585px;
@@ -4258,6 +4262,7 @@ button,
   position: relative;
   padding: 42px 0 90px 120px;
   width: 100%;
+  max-width: 1440px;
 }
 @media (max-width: 1199px) {
   .reviews__wrapper {
@@ -4497,6 +4502,7 @@ button,
   margin: 0 auto;
   margin-bottom: 30px;
   width: 100%;
+  max-width: 1440px;
 }
 @media (max-width: 1199px) {
   .advantages__wrapper {
@@ -4683,6 +4689,7 @@ button,
   position: relative;
   padding: 50px 0 0 0;
   width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
 }
 @media (max-width: 1199px) {
@@ -4892,6 +4899,7 @@ button,
   position: relative;
   margin: 0 auto;
   width: 100%;
+  max-width: 1440px;
   padding: 0 150px 0 120px;
 }
 @media (max-width: 1199px) {
@@ -5061,6 +5069,7 @@ button,
   position: relative;
   margin: 0 auto;
   width: 100%;
+  max-width: 1440px;
   padding: 0 60px 50px 120px;
   display: -ms-grid;
   display: grid;
@@ -5169,6 +5178,7 @@ button,
   position: relative;
   margin: 0 auto;
   width: 100%;
+  max-width: 1440px;
   padding: 30px 30px 0 120px;
   display: -webkit-box;
   display: -ms-flexbox;

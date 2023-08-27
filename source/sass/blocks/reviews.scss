@@ -6,6 +6,7 @@
   position: relative;
   padding: 42px 0 90px 120px;
   width: 100%;
+  max-width: 1440px;
 
   @include vp-1199 {
     padding-top: 60px;

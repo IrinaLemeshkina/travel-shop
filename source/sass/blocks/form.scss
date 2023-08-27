@@ -9,6 +9,7 @@
   position: relative;
   margin: 0 auto;
   width: 100%;
+  max-width: 1440px;
   padding: 0 150px 0 120px;
 
   @include vp-1199 {
@@ -103,7 +104,6 @@
 
 .custom-input,
 .custom-textarea {
-
   &__error {
     position: absolute;
     left: 0;
