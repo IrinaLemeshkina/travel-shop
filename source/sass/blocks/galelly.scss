@@ -18,11 +18,11 @@
 .gallery__text {
   margin: 0;
   width: 813px;
+  padding: 30px 0 10px;
 }
 
 .gallery__title {
-  margin: 0 auto;
-  margin-bottom: 25px;
+  margin: 0 auto 20px;
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
@@ -75,17 +75,22 @@
   z-index: 2;
 }
 
+.gallery__swiper-wrapper {
+  gap: 7px;
+}
+
 .gallery__card {
   margin: 0 auto;
   cursor: grab;
   background-color: $color-default-white;
   height: auto;
   width: 790px;
-  padding: 20px;
+  padding: 20px 0;
   display: grid;
   grid-template-columns: 275px 298px;
   grid-template-rows: 179px 265px;
-  gap: 10px;
+  gap: 7px;
+  min-width: 573px;
 
   @include vp-1199 {
     width: 560px;
@@ -106,11 +111,12 @@
 .gallery__card img {
   object-fit: cover;
   background-color: $color-default-white;
+  height: 100%;
 }
 
 .gallery .swiper-button {
   position: absolute;
-  top: -10%;
+  top: -8.5%;
   width: 37px;
   height: 35px;
   background-repeat: no-repeat;
@@ -146,7 +152,7 @@
   }
 
   &-prev {
-    left: 82%;
+    left: 90.1%;
     transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-left.svg");
     fill: $color-default-white;
@@ -166,7 +172,7 @@
   }
 
   &-next {
-    right: 10%;
+    right: 4.2%;
     transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-right.svg");
     fill: $color-default-white;
