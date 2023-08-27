@@ -4879,7 +4879,7 @@ button,
 }
 
 .form {
-  margin: 0;
+  margin: 0 auto 50px;
   background: url("../img/form/background.jpg") no-repeat;
   background-size: cover;
   height: 800px;
@@ -5057,12 +5057,13 @@ button,
   position: relative;
   margin: 0 auto;
   width: 100%;
-  padding: 0 120px;
+  padding: 0 60px 50px 120px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 585px;
   grid-template-columns: auto 585px;
   gap: 20px;
+  border-bottom: 1px solid #2d383f;
 }
 @media (max-width: 1199px) {
   .contacts__wrapper {
@@ -5077,8 +5078,7 @@ button,
 
 .contacts__title {
   margin: 0;
-  padding: 12px 45px 52px 0;
-  font-family: "Montserrat", "Arial", sans-serif;
+  padding: 32px 45px 22px 0;
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
@@ -5125,14 +5125,28 @@ button,
   letter-spacing: 0;
   text-align: left;
   margin-top: 0;
+  padding-right: 110px;
 }
 
-.contacts h3 {
+.contacts__list {
+  padding: 15px 55px;
+}
+
+.contacts__item {
+  margin-bottom: 35px;
+}
+
+.contacts__item h3 {
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
   letter-spacing: 0;
   text-align: left;
+  margin-bottom: 9px;
+}
+
+.contacts__item p {
+  margin-top: -2px;
 }
 
 .contacts a {
