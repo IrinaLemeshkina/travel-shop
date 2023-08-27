@@ -8,6 +8,7 @@
 .form__wrapper {
   position: relative;
   margin: 0 auto;
+  width: 100%;
   padding: 0 150px 0 120px;
 
   @include vp-1199 {

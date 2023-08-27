@@ -52,13 +52,10 @@
 
 .about__media {
   height: 474px;
-  background: #ece9e4 url("../img/about/about.png") no-repeat;
+  background-repeat: no-repeat;
+  background-image: image-set("../img/about/about.png" 1x, "../img/about/about@2x.png" 2x);
+  background-color: #ffffff;
   margin-top: 40px;
-
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/about/about@2x.png") no-repeat;
-  }
 }
 
 .about__media img {

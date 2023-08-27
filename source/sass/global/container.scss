@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 0 120px;
 
-  @media (min-width: 1440px) {
+  @include vp-1440 {
     padding: 0 120px;
   }
 

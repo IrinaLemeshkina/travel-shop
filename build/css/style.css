@@ -3853,7 +3853,7 @@ button,
 
 .training__wrapper {
   position: relative;
-  margin: 50px 0;
+  margin: 50px auto;
   padding: 65px 120px 0;
 }
 @media (max-width: 1199px) {
@@ -4238,13 +4238,11 @@ button,
 
 .about__media {
   height: 474px;
-  background: #ece9e4 url("../img/about/about.png") no-repeat;
+  background-repeat: no-repeat;
+  background-image: -webkit-image-set(url("../img/about/about.png") 1x, url("../img/about/about@2x.png") 2x);
+  background-image: image-set("../img/about/about.png" 1x, "../img/about/about@2x.png" 2x);
+  background-color: #ffffff;
   margin-top: 40px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .about__media {
-    background-image: url("../img/about/about@2x.png") no-repeat;
-  }
 }
 
 .about__media img {
@@ -4259,6 +4257,7 @@ button,
 .reviews__wrapper {
   position: relative;
   padding: 42px 0 90px 120px;
+  width: 100%;
 }
 @media (max-width: 1199px) {
   .reviews__wrapper {
@@ -4495,7 +4494,9 @@ button,
 .advantages__wrapper {
   position: relative;
   padding: 45px 0 110px 0;
+  margin: 0 auto;
   margin-bottom: 30px;
+  width: 100%;
 }
 @media (max-width: 1199px) {
   .advantages__wrapper {
@@ -4681,6 +4682,8 @@ button,
 .gallery__wrapper {
   position: relative;
   padding: 50px 0 0 0;
+  width: 100%;
+  margin: 0 auto;
 }
 @media (max-width: 1199px) {
   .gallery__wrapper {
@@ -4888,6 +4891,7 @@ button,
 .form__wrapper {
   position: relative;
   margin: 0 auto;
+  width: 100%;
   padding: 0 150px 0 120px;
 }
 @media (max-width: 1199px) {

@@ -5,7 +5,9 @@
 .advantages__wrapper {
   position: relative;
   padding: 45px 0 110px 0;
+  margin: 0 auto;
   margin-bottom: 30px;
+  width: 100%;
 
   @include vp-1199 {
     padding: 0;
