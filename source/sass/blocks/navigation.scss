@@ -197,6 +197,15 @@
     font-size: 18px;
     font-weight: 700;
     margin: 10px 8px;
+
+    @include vp-1199 {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 16px;
+      letter-spacing: 0;
+      text-align: right;
+      margin: 0;
+    }
   }
 }
 
@@ -230,7 +239,7 @@
 
 .navigation__logo {
   display: block;
-  min-width: 205px;
+  width: 205px;
   height: 62px;
 
   &:hover,
@@ -239,13 +248,25 @@
   }
 
   @include vp-1199 {
-    min-width: 144px;
+    width: 144px;
     height: 44px;
     margin-left: 113px;
   }
 
   @include vp-767 {
-    min-width: 112px;
+    width: 112px;
+    height: 34px;
+  }
+}
+
+.navigation__logo svg {
+  @include vp-1199 {
+    width: 144px;
+    height: 44px;
+  }
+
+  @include vp-767 {
+    width: 112px;
     height: 34px;
   }
 }

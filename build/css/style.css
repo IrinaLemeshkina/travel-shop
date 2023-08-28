@@ -3064,6 +3064,16 @@ button,
   font-weight: 700;
   margin: 10px 8px;
 }
+@media (max-width: 1199px) {
+  .navigation__link-phone {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: right;
+    margin: 0;
+  }
+}
 
 .navigation__list {
   display: -webkit-box;
@@ -3113,7 +3123,7 @@ button,
 
 .navigation__logo {
   display: block;
-  min-width: 205px;
+  width: 205px;
   height: 62px;
 }
 .navigation__logo:hover, .navigation__logo:focus {
@@ -3121,14 +3131,27 @@ button,
 }
 @media (max-width: 1199px) {
   .navigation__logo {
-    min-width: 144px;
+    width: 144px;
     height: 44px;
     margin-left: 113px;
   }
 }
 @media (max-width: 767px) {
   .navigation__logo {
-    min-width: 112px;
+    width: 112px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navigation__logo svg {
+    width: 144px;
+    height: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .navigation__logo svg {
+    width: 112px;
     height: 34px;
   }
 }
@@ -3186,6 +3209,18 @@ button,
   margin: 0 auto;
   padding: 0 105px 0 120px;
 }
+@media (max-width: 1199px) {
+  .hero__container {
+    max-width: 1199px;
+    padding: 0 42px;
+  }
+}
+@media (max-width: 767px) {
+  .hero__container {
+    width: 100%;
+    padding-bottom: 32px;
+  }
+}
 
 .hero__wrapper {
   position: relative;
@@ -3218,7 +3253,8 @@ button,
   .hero__text h2 {
     font-size: 56px;
     line-height: 56px;
-    padding-bottom: 13px;
+    padding: 0 0 12px;
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
@@ -3259,7 +3295,9 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__info .btn {
+    margin: 0 auto;
     margin-bottom: 50px;
+    width: 206px;
   }
 }
 
@@ -3311,10 +3349,12 @@ button,
 @media (max-width: 1199px) {
   .hero__video-wrapper {
     position: relative;
-    margin: 0 auto;
+    margin: 15px auto 65px;
+    right: 0;
     width: 442px;
     height: 300px;
     background: url("../img/hero/video-tablet.webp") no-repeat;
+    bottom: 0;
   }
 }
 @media (max-width: 767px) {
@@ -3397,8 +3437,10 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__image-wrapper-left {
-    right: 370px;
-    top: 500px;
+    width: 308px;
+    height: 337px;
+    right: 255px;
+    top: 415px;
   }
 }
 
@@ -3410,8 +3452,10 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__image-wrapper-right {
-    right: 180px;
-    top: 500px;
+    width: 236px;
+    height: 312px;
+    right: 120px;
+    top: 470px;
   }
 }
 
@@ -3427,6 +3471,7 @@ button,
     position: relative;
     margin: 0 auto;
     top: 20px;
+    right: 0;
   }
 }
 @media (max-width: 767px) {
