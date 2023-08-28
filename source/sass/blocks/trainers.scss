@@ -59,7 +59,6 @@
 }
 
 .training__description {
-  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   max-width: 920px;
@@ -146,7 +145,7 @@
   }
 
   &-prev {
-    left: 90%;
+    left: 86%;
     transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-left.svg");
     fill: $color-default-white;
@@ -166,7 +165,7 @@
   }
 
   &-next {
-    right: 4.4%;
+    right: 8.5%;
     transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-right.svg");
     fill: $color-default-white;

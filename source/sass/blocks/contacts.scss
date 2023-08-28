@@ -9,7 +9,7 @@
   max-width: 1440px;
   padding: 0 60px 50px 120px;
   display: grid;
-  grid-template-columns: auto 585px;
+  grid-template-columns: 595px 585px;
   gap: 20px;
   border-bottom: 1px solid #2d383f;
 
@@ -67,8 +67,7 @@
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
-  margin-top: 0;
-  padding-right: 110px;
+  margin: 0 115px 15px 0;
 }
 
 .contacts__list {

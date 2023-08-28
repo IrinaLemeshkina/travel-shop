@@ -93,7 +93,7 @@
 
 .reviews .swiper-button {
   position: absolute;
-  top: -14.5%;
+  top: -15.5%;
   width: 37px;
   height: 35px;
   background-repeat: no-repeat;
@@ -129,7 +129,7 @@
   }
 
   &-prev {
-    left: 89%;
+    left: 85%;
     transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-left.svg");
     fill: $color-default-white;
@@ -149,7 +149,7 @@
   }
 
   &-next {
-    right: 4.5%;
+    right: 9%;
     transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-right.svg");
     fill: $color-default-white;

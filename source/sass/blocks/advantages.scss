@@ -8,7 +8,7 @@
   margin: 0 auto;
   margin-bottom: 30px;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1200px;
 
   @include vp-1199 {
     padding: 0;
@@ -17,7 +17,7 @@
 
 .advantages__title {
   margin: 0 auto 45px;
-  padding: 5px 0 0 60px;
+  padding: 5px 0 0 0;
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
@@ -39,7 +39,7 @@
 .advantages__title::after {
   content: "Преимущества";
   position: absolute;
-  left: 36%;
+  left: 34%;
   top: 35px;
   font-size: 55px;
   font-weight: 800;
@@ -118,7 +118,7 @@
   }
 
   &-prev {
-    left: 49.5%;
+    left: 46.7%;
     transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-left.svg");
     fill: $color-default-white;
@@ -138,7 +138,7 @@
   }
 
   &-next {
-    right: 45%;
+    right: 46.7%;
     transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-right.svg");
     fill: $color-default-white;

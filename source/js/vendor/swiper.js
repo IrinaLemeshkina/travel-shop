@@ -10288,7 +10288,7 @@ const swiper = () => {
         swiperBlock5 = new Swiper('[data-id="swiper-advantages"]', {
           loop: !0,
           slidesPerView: 3,
-          slidesPerColumn: 1,
+          slidesPerColumn: 3,
           initialSlide: 2,
           spaceBetween: 30,
           centeredSlides: true,
