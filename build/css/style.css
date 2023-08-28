@@ -3556,6 +3556,7 @@ button,
   .tours__title {
     font-size: 25px;
     line-height: 25px;
+    padding-top: 85px;
   }
 }
 @media (max-width: 767px) {
@@ -3569,18 +3570,18 @@ button,
   content: "Ближайшие туры";
   position: absolute;
   left: 0;
-  top: 30px;
+  top: 70px;
   font-size: 55px;
   font-weight: 800;
   line-height: 1;
   opacity: 0.03;
 }
-@media screen and (max-width: 1199px) {
+@media (max-width: 1199px) {
   .tours__title::after {
     font-size: 40px;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .tours__title::after {
     font-size: 26px;
   }
@@ -3588,29 +3589,27 @@ button,
 
 .tours__swiper {
   width: 1200px;
-  height: 550px;
-}
-@media (min-width: 1200px) and (max-width: 1360px) {
-  .tours__swiper {
-    width: 1055px;
-  }
 }
 @media (max-width: 1199px) {
   .tours__swiper {
-    padding-left: 4px;
-    width: 576px;
+    width: 675px;
   }
 }
 @media (max-width: 767px) {
   .tours__swiper {
     padding: 0;
-    width: 78%;
+    width: 100%;
     height: auto;
   }
 }
 
 .tours__swiper-wrapper {
   margin: 55px 0 0 0;
+}
+@media (max-width: 1199px) {
+  .tours__swiper-wrapper {
+    margin: 40px 5px 0;
+  }
 }
 
 .tours__card {
@@ -3619,12 +3618,23 @@ button,
   cursor: -webkit-grab;
   cursor: grab;
 }
+@media (max-width: 1199px) {
+  .tours__card {
+    max-width: 324px;
+    min-height: 412px;
+  }
+}
 
 .tours__card img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
   background-color: #ffffff;
   width: 380px;
+}
+@media (max-width: 1199px) {
+  .tours__card img {
+    min-height: 412px;
+  }
 }
 
 .tours .swiper-button {
@@ -3642,7 +3652,7 @@ button,
 }
 @media (max-width: 1199px) {
   .tours .swiper-button {
-    top: 55%;
+    top: 19%;
   }
 }
 @media (max-width: 767px) {
@@ -3680,6 +3690,11 @@ button,
   background-size: 37px 35px;
   background-color: #1c3374;
 }
+@media (max-width: 1199px) {
+  .tours .swiper-button-prev {
+    left: 88.5%;
+  }
+}
 .tours .swiper-button-next {
   right: 0;
   -webkit-transform: translate(0, -10%);
@@ -3705,7 +3720,6 @@ button,
   padding: 205px 20px 0;
   top: 0;
   width: 380px;
-  height: 100%;
   color: #ffffff;
   font-size: 12px;
   line-height: 28px;
@@ -3720,7 +3734,8 @@ button,
 }
 @media (max-width: 1199px) {
   .tours__info {
-    width: 268px;
+    padding-top: 208px;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
@@ -3758,8 +3773,13 @@ button,
   letter-spacing: 0.04em;
   text-align: center;
   display: block;
-  margin-top: 26px;
+  margin-top: 30px;
   text-transform: uppercase;
+}
+@media (max-width: 1199px) {
+  .tours__button {
+    margin-top: 0;
+  }
 }
 
 .info__top {
@@ -3772,8 +3792,26 @@ button,
           flex-direction: row;
   gap: 73px;
 }
+@media (max-width: 1199px) {
+  .info__top {
+    gap: 53px;
+  }
+}
+
 .info__top-long {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 66px;
+}
+@media (max-width: 1199px) {
+  .info__top-long {
+    gap: 45px;
+  }
 }
 
 .info__place {
@@ -3781,6 +3819,12 @@ button,
   width: 108px;
   height: 29px;
   padding-left: 40px;
+}
+@media (max-width: 1199px) {
+  .info__place {
+    width: 92px;
+    padding-left: 30px;
+  }
 }
 
 .info__place span {
@@ -3798,6 +3842,11 @@ button,
   position: absolute;
   left: 45px;
 }
+@media (max-width: 1199px) {
+  .info__place::after {
+    left: 35px;
+  }
+}
 
 .info__day::after {
   content: url("../img/sprite/tour-sun.svg");
@@ -3805,7 +3854,12 @@ button,
   height: 12px;
   position: absolute;
   left: 44%;
-  top: 38%;
+  top: 51%;
+}
+@media (max-width: 1199px) {
+  .info__day::after {
+    left: 41%;
+  }
 }
 
 .info__nigth::after {
@@ -3814,7 +3868,12 @@ button,
   height: 12px;
   position: absolute;
   left: 73%;
-  top: 38%;
+  top: 51%;
+}
+@media (max-width: 1199px) {
+  .info__nigth::after {
+    left: 69%;
+  }
 }
 
 .info__central {
@@ -3832,6 +3891,11 @@ button,
   text-align: left;
   padding-right: 60px;
 }
+@media (max-width: 1199px) {
+  .info__central {
+    padding-right: 0;
+  }
+}
 
 .info__bottom {
   display: -webkit-box;
@@ -3844,6 +3908,11 @@ button,
   gap: 52px;
   margin-top: 5px;
   line-height: 22px;
+}
+@media (max-width: 1199px) {
+  .info__bottom {
+    gap: 25px;
+  }
 }
 
 .info__bottom span {
