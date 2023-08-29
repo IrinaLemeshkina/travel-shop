@@ -1,6 +1,10 @@
 .training {
   margin: 0;
   margin-bottom: 50px;
+
+  @include vp-1199 {
+    margin-bottom: 0;
+  }
 }
 
 .training__wrapper {
@@ -130,15 +134,7 @@
   cursor: pointer;
 
   @include vp-1199 {
-    top: 32.3%;
-
-    &--prev {
-      left: 11.5;
-    }
-
-    &--next {
-      right: 6%;
-    }
+    top: 33.3%;
   }
 
   @include vp-767 {

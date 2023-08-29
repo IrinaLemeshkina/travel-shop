@@ -10,7 +10,7 @@
   margin: 0 auto;
 
   @include vp-1199 {
-    padding-top: 60px;
+    padding-top: 35px;
   }
 
   @include vp-767 {
@@ -22,6 +22,10 @@
   margin: 0;
   width: 813px;
   padding: 25px 0 8px;
+
+  @include vp-1199 {
+    padding-bottom: 5px;
+  }
 }
 
 .gallery h2 {
@@ -36,6 +40,8 @@
   @include vp-1199 {
     font-size: 25px;
     line-height: 25px;
+    padding: 0 45px;
+    margin-bottom: 20px;
   }
 
   @include vp-767 {
@@ -64,13 +70,19 @@
   }
 }
 
-.gallery__description {
+.gallery p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
   padding-left: 120px;
+
+  @include vp-1199 {
+    padding: 0 350px 0 45px;
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .gallery__swiper {
@@ -131,7 +143,7 @@
   cursor: pointer;
 
   @include vp-1199 {
-    top: 55%;
+    top: -10%;
   }
 
   @include vp-767 {
@@ -172,6 +184,10 @@
       background-size: 37px 35px;
       background-color: #1c3374;
     }
+
+    @include vp-1199 {
+      left: 84.1%;
+    }
   }
 
   &-next {
@@ -193,5 +209,9 @@
       background-color: #1c3374;
       fill: #ffffff;
     }
+  }
+
+  @include vp-1199 {
+    right: 6%;
   }
 }

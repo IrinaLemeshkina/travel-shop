@@ -9,7 +9,7 @@
   max-width: 1440px;
 
   @include vp-1199 {
-    padding-top: 60px;
+    padding: 50px 0 50px 45px;
   }
 
   @include vp-767 {
@@ -72,9 +72,13 @@
   display: grid;
   grid-template-columns: 285px 450px;
   max-width: 788px;
+  gap: 3px;
 
   @include vp-1199 {
-    width: 560px;
+    max-width: 560px;
+    grid-template-columns: 186px 300px;
+    gap: 30px;
+    padding-bottom: 10px;
   }
 
   @include vp-767 {
@@ -89,6 +93,11 @@
   object-fit: cover;
   background-color: $color-default-white;
   min-width: 258px;
+
+  @include vp-1199 {
+    min-width: 186px;
+    min-height: 237px;
+  }
 }
 
 .reviews .swiper-button {
@@ -175,15 +184,25 @@
   grid-template-rows: auto 42px;
   height: 250px;
   justify-content: space-around;
+
+  @include vp-1199 {
+    height: 245px;
+  }
 }
 
-.reviews__text {
+.reviews__text p {
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0;
   text-align: left;
-  margin: 0 0 0 3px;
+  margin: 0;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 10px;
+  }
 }
 
 .reviews__autor p {
@@ -193,6 +212,11 @@
   letter-spacing: 0;
   text-align: left;
   margin: 0 auto;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .reviews__autor span {

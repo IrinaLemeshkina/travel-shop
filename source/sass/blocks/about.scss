@@ -12,7 +12,7 @@
   padding-right: 120px;
 
   @include vp-1199 {
-    padding: 5px 0 55px;
+    padding: 0;
     grid-template-columns: auto 370px;
   }
 
@@ -75,6 +75,10 @@
 
 .about__text {
   padding-top: 50px;
+
+  @include vp-1199 {
+    padding-top: 0;
+  }
 }
 
 .about__text p {
@@ -98,7 +102,8 @@
   margin-top: 40px;
 
   @include vp-1199 {
-    margin-top: 60px;
+    height: 434px;
+    margin-top: 0;
     background-image: image-set("../img/about/about-tablet.png" 1x, "../img/about/about-tablet@2x.png" 2x);
   }
 }

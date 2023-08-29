@@ -1,6 +1,11 @@
 .footer__social {
   margin-top: 10px;
   padding-right: 90px;
+
+  @include vp-1199 {
+    padding-right: 0;
+    margin-top: 30px;
+  }
 }
 
 .social__list {

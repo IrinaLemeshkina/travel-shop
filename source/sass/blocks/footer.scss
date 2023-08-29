@@ -13,7 +13,7 @@
   flex-wrap: wrap;
 
   @include vp-1199 {
-    padding: 5px 0 55px;
+    padding: 42px 45px 0;
   }
 
   @include vp-767 {
@@ -30,16 +30,28 @@
   line-height: 18px;
   letter-spacing: 0;
   text-align: right;
+
+  @include vp-1199 {
+    display: none;
+  }
 }
 
 .footer__top {
   display: flex;
   flex-wrap: wrap;
   gap: 70px;
+
+  @include vp-1199 {
+    gap: 70px;
+  }
 }
 
 .confidancial {
   padding-right: 90px;
+
+  @include vp-1199 {
+    padding-right: 0;
+  }
 }
 
 .confidancial__link {
@@ -55,4 +67,15 @@
 
 .footer__nav {
   padding-left: 35px;
+
+  @include vp-1199 {
+    padding-left: 13px;
+  }
+}
+
+.footer__logo svg {
+  @include vp-1199 {
+    width: 118px;
+    height: 34px;
+  }
 }
