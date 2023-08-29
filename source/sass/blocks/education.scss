@@ -8,6 +8,7 @@
 
   @include vp-1199 {
     padding: 5px 0 55px;
+    border-bottom: none;
   }
 
   @include vp-767 {
@@ -23,6 +24,14 @@
   padding-bottom: 32px;
   margin: 16px 90px 0 120px;
   align-items: center;
+
+  @include vp-1199 {
+    margin-left: 45px;
+    flex-wrap: wrap;
+    gap: 95px 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .education__item {
@@ -35,6 +44,13 @@
   display: flex;
   align-items: center;
   margin-right: 41px;
+
+  @include vp-1199 {
+    max-width: 295px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 0;
+  }
 }
 
 .education__item:last-of-type {
@@ -43,10 +59,52 @@
   }
 }
 
-.education__subtitle {
+.education__item:first-of-type::after {
+  @include vp-1199 {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 1px;
+    bottom: 60%;
+    background-color: rgba(2, 102, 193, 0.2);
+  }
+}
+
+.education__item:last-of-type::after {
+  @include vp-1199 {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 1px;
+    top: 55%;
+    background-color: rgba(2, 102, 193, 0.2);
+  }
+}
+
+.education__item:nth-last-of-type(3n)::after {
+  @include vp-1199 {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 52px;
+    bottom: 155px;
+    left: 52.7%;
+    background-color: rgba(2, 102, 193, 0.2);
+  }
+}
+
+.education h3 {
   font-size: 21px;
   line-height: 1;
-  margin: 0 0 40px 120px;
+  margin: 0 0 0 120px;
+
+  @include vp-1199 {
+    margin-left: 45px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+  }
 }
 
 .training__education div::before {
@@ -57,6 +115,25 @@
   bottom: -7px;
   background-color: #0266c1;
   border-radius: 50%;
+
+  @include vp-1199 {
+    bottom: 58%;
+  }
+}
+
+.training__education div::after {
+  display: none;
+
+  @include vp-1199 {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: #0266c1;
+    border-radius: 50%;
+    top: 53.5%;
+    display: block;
+  }
 }
 
 .education span {

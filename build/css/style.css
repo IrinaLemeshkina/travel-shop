@@ -3525,6 +3525,29 @@ button,
   margin: 0;
 }
 
+.tours::after {
+  content: url("../img/tour/psevdo.png");
+  position: absolute;
+  right: 0;
+  top: 12.5%;
+  z-index: -1;
+  width: 602px;
+  height: 1364px;
+}
+@media (max-width: 1199px) {
+  .tours::after {
+    top: 13.4%;
+    width: 294px;
+  }
+}
+@media (max-width: 767px) {
+  .tours::after {
+    top: 12.5%;
+    width: 176px;
+    height: 595px;
+  }
+}
+
 .tours__wrapper {
   position: relative;
   margin: 0 auto;
@@ -3570,7 +3593,7 @@ button,
   content: "Ближайшие туры";
   position: absolute;
   left: 0;
-  top: 70px;
+  top: 30px;
   font-size: 55px;
   font-weight: 800;
   line-height: 1;
@@ -3969,12 +3992,11 @@ button,
   position: relative;
   margin: 50px auto;
   padding: 65px 120px 0;
-  width: 100%;
-  max-width: 1440px;
 }
 @media (max-width: 1199px) {
   .training__wrapper {
-    padding: 5px 0 55px;
+    padding: 23px 0 32px 45px;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 767px) {
@@ -3983,7 +4005,7 @@ button,
   }
 }
 
-.training__title {
+.training h2 {
   margin: 0;
   padding: 12px 50px 15px 0;
   font-size: 35px;
@@ -3993,19 +4015,20 @@ button,
   text-align: left;
 }
 @media (max-width: 1199px) {
-  .training__title {
+  .training h2 {
     font-size: 25px;
     line-height: 25px;
+    padding-bottom: 3px;
   }
 }
 @media (max-width: 767px) {
-  .training__title {
+  .training h2 {
     font-size: 22px;
     line-height: 22px;
   }
 }
 
-.training__title::after {
+.training h2::after {
   content: "Обучение";
   position: absolute;
   left: 110px;
@@ -4016,12 +4039,12 @@ button,
   opacity: 0.03;
 }
 @media screen and (max-width: 1199px) {
-  .training__title::after {
+  .training h2::after {
     font-size: 40px;
   }
 }
 @media screen and (max-width: 767px) {
-  .training__title::after {
+  .training h2::after {
     font-size: 26px;
   }
 }
@@ -4037,13 +4060,26 @@ button,
   color: #2d383f;
   padding-right: 50px;
 }
+@media (max-width: 1199px) {
+  .training__description {
+    padding-right: 150px;
+  }
+}
 
-.training__subtitle {
+.training h3 {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
   letter-spacing: 0;
   text-align: left;
+  padding-bottom: 20px;
+}
+@media (max-width: 1199px) {
+  .training h3 {
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 12px;
+  }
 }
 
 .training__swiper {
@@ -4051,15 +4087,9 @@ button,
   -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
           box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   height: 100%;
-  width: 1200px;
-}
-
-.training__swiper-wrapper {
-  margin-top: 20px;
 }
 
 .training__card {
-  position: relative;
   margin: 0 auto;
   cursor: -webkit-grab;
   cursor: grab;
@@ -4076,11 +4106,16 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (max-width: 1199px) {
+  .training__card {
+    max-width: 206px;
+    padding: 10px 15px 20px 15px;
+  }
+}
 
 .training__card img {
   -o-object-fit: cover;
      object-fit: cover;
-  background-color: #ffffff;
   width: 100%;
 }
 
@@ -4099,7 +4134,13 @@ button,
 }
 @media (max-width: 1199px) {
   .training .swiper-button {
-    top: 55%;
+    top: 32.3%;
+  }
+  .training .swiper-button--prev {
+    left: 11.5;
+  }
+  .training .swiper-button--next {
+    right: 6%;
   }
 }
 @media (max-width: 767px) {
@@ -4137,6 +4178,11 @@ button,
   background-size: 37px 35px;
   background-color: #1c3374;
 }
+@media (max-width: 1199px) {
+  .training .swiper-button-prev {
+    left: 84%;
+  }
+}
 .training .swiper-button-next {
   right: 8.5%;
   -webkit-transform: translate(0, -10%);
@@ -4155,6 +4201,11 @@ button,
   background-size: 37px 35px;
   background-color: #1c3374;
   fill: #ffffff;
+}
+@media (max-width: 1199px) {
+  .training .swiper-button {
+    right: 5.7%;
+  }
 }
 
 .training__info {
@@ -4211,6 +4262,7 @@ button,
 @media (max-width: 1199px) {
   .education {
     padding: 5px 0 55px;
+    border-bottom: none;
   }
 }
 @media (max-width: 767px) {
@@ -4235,6 +4287,18 @@ button,
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 1199px) {
+  .education__list {
+    margin-left: 45px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 95px 75px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 .education__item {
   font-size: 16px;
@@ -4251,6 +4315,14 @@ button,
           align-items: center;
   margin-right: 41px;
 }
+@media (max-width: 1199px) {
+  .education__item {
+    max-width: 295px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 0;
+  }
+}
 
 @media (max-width: 1199px) {
   .education__item:last-of-type {
@@ -4262,10 +4334,53 @@ button,
   }
 }
 
-.education__subtitle {
+@media (max-width: 1199px) {
+  .education__item:first-of-type::after {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 1px;
+    bottom: 60%;
+    background-color: rgba(2, 102, 193, 0.2);
+  }
+}
+
+@media (max-width: 1199px) {
+  .education__item:last-of-type::after {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 1px;
+    top: 55%;
+    background-color: rgba(2, 102, 193, 0.2);
+  }
+}
+
+@media (max-width: 1199px) {
+  .education__item:nth-last-of-type(3n)::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 52px;
+    bottom: 155px;
+    left: 52.7%;
+    background-color: rgba(2, 102, 193, 0.2);
+  }
+}
+
+.education h3 {
   font-size: 21px;
   line-height: 1;
-  margin: 0 0 40px 120px;
+  margin: 0 0 0 120px;
+}
+@media (max-width: 1199px) {
+  .education h3 {
+    margin-left: 45px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+  }
 }
 
 .training__education div::before {
@@ -4276,6 +4391,27 @@ button,
   bottom: -7px;
   background-color: #0266c1;
   border-radius: 50%;
+}
+@media (max-width: 1199px) {
+  .training__education div::before {
+    bottom: 58%;
+  }
+}
+
+.training__education div::after {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .training__education div::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: #0266c1;
+    border-radius: 50%;
+    top: 53.5%;
+    display: block;
+  }
 }
 
 .education span {

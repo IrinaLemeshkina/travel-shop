@@ -2,6 +2,27 @@
   margin: 0;
 }
 
+.tours::after {
+  content: url("../img/tour/psevdo.png");
+  position: absolute;
+  right: 0;
+  top: 12.5%;
+  z-index: -1;
+  width: 602px;
+  height: 1364px;
+
+  @include vp-1199 {
+    top: 13.4%;
+    width: 294px;
+  }
+
+  @include vp-767 {
+    top: 12.5%;
+    width: 176px;
+    height: 595px;
+  }
+}
+
 .tours__wrapper {
   position: relative;
   margin: 0 auto;
@@ -43,7 +64,7 @@
   content: "Ближайшие туры";
   position: absolute;
   left: 0;
-  top: 70px;
+  top: 30px;
   font-size: 55px;
   font-weight: 800;
   line-height: 1;
