@@ -22,7 +22,7 @@
   }
 }
 
-.contacts__title {
+.contacts h2 {
   margin: 0;
   padding: 32px 45px 22px 0;
   font-size: 35px;
@@ -42,7 +42,7 @@
   }
 }
 
-.contacts__title::after {
+.contacts h2::after {
   content: "Контакты";
   position: absolute;
   left: 120px;
@@ -52,11 +52,11 @@
   line-height: 1;
   opacity: 0.03;
 
-  @media screen and (max-width: 1199px) {
+  @include vp-1199 {
     font-size: 40px;
   }
 
-  @media screen and (max-width: 767px) {
+  @include vp-767 {
     font-size: 26px;
   }
 }

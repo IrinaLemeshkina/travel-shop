@@ -17,7 +17,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 105px 0 120px;
+  padding: 0 45px 0 120px;
 
   @include vp-1199 {
     max-width: 1199px;
@@ -138,7 +138,7 @@
   background-size: contain;
   background-color: #1e6a9f;
   bottom: 105px;
-  right: 15px;
+  right: 75px;
   width: 482px;
   height: 317px;
 
@@ -299,7 +299,7 @@
   text-align: right;
   bottom: 25px;
   left: auto;
-  right: 6px;
+  right: 5.3%;
 
   @include vp-1199 {
     text-align: center;

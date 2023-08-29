@@ -4,8 +4,7 @@
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  column-gap: 10px;
-  justify-content: space-between;
+  gap: 122px;
   padding-top: 40px;
   max-width: 100%;
 
@@ -196,7 +195,6 @@
   &-phone {
     font-size: 18px;
     font-weight: 700;
-    margin: 10px 8px;
 
     @include vp-1199 {
       font-size: 16px;
@@ -216,7 +214,7 @@
   row-gap: 15px;
   justify-content: center;
   list-style: none;
-  padding-left: 15px;
+  padding-left: 10px;
 
   @include vp-1199 {
     margin-top: 0;
@@ -225,9 +223,7 @@
 
 .navigation__phone {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 15px;
+  flex-wrap: nowrap;
   min-width: 142px;
   font-size: 18px;
 

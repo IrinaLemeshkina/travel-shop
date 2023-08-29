@@ -2860,12 +2860,7 @@ button,
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 122px;
   padding-top: 40px;
   max-width: 100%;
 }
@@ -3062,7 +3057,6 @@ button,
 .navigation__link-phone {
   font-size: 18px;
   font-weight: 700;
-  margin: 10px 8px;
 }
 @media (max-width: 1199px) {
   .navigation__link-phone {
@@ -3089,7 +3083,7 @@ button,
       -ms-flex-pack: center;
           justify-content: center;
   list-style: none;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 @media (max-width: 1199px) {
   .navigation__list {
@@ -3101,12 +3095,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  gap: 15px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   min-width: 142px;
   font-size: 18px;
 }
@@ -3207,7 +3197,7 @@ button,
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 105px 0 120px;
+  padding: 0 45px 0 120px;
 }
 @media (max-width: 1199px) {
   .hero__container {
@@ -3342,7 +3332,7 @@ button,
   background-size: contain;
   background-color: #1e6a9f;
   bottom: 105px;
-  right: 15px;
+  right: 75px;
   width: 482px;
   height: 317px;
 }
@@ -3511,7 +3501,7 @@ button,
   text-align: right;
   bottom: 25px;
   left: auto;
-  right: 6px;
+  right: 5.3%;
 }
 @media (max-width: 1199px) {
   .hero__slider-wrapper .swiper-pagination {
@@ -3566,7 +3556,7 @@ button,
   }
 }
 
-.tours__title {
+.tours h2 {
   margin: 0;
   padding: 45px 50px 0 0;
   font-size: 35px;
@@ -3576,20 +3566,20 @@ button,
   text-align: left;
 }
 @media (max-width: 1199px) {
-  .tours__title {
+  .tours h2 {
     font-size: 25px;
     line-height: 25px;
     padding-top: 85px;
   }
 }
 @media (max-width: 767px) {
-  .tours__title {
+  .tours h2 {
     font-size: 22px;
     line-height: 22px;
   }
 }
 
-.tours__title::after {
+.tours h2::after {
   content: "Ближайшие туры";
   position: absolute;
   left: 0;
@@ -3600,12 +3590,13 @@ button,
   opacity: 0.03;
 }
 @media (max-width: 1199px) {
-  .tours__title::after {
+  .tours h2::after {
     font-size: 40px;
+    top: 65px;
   }
 }
 @media (max-width: 767px) {
-  .tours__title::after {
+  .tours h2::after {
     font-size: 26px;
   }
 }
@@ -3640,6 +3631,7 @@ button,
   margin: 0 auto;
   cursor: -webkit-grab;
   cursor: grab;
+  max-width: 380px;
 }
 @media (max-width: 1199px) {
   .tours__card {
@@ -3796,7 +3788,7 @@ button,
   letter-spacing: 0.04em;
   text-align: center;
   display: block;
-  margin-top: 30px;
+  margin: 30px 0 0 0;
   text-transform: uppercase;
 }
 @media (max-width: 1199px) {
@@ -4038,12 +4030,12 @@ button,
   line-height: 1;
   opacity: 0.03;
 }
-@media screen and (max-width: 1199px) {
+@media (max-width: 1199px) {
   .training h2::after {
     font-size: 40px;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .training h2::after {
     font-size: 26px;
   }
@@ -4450,6 +4442,8 @@ button,
 @media (max-width: 1199px) {
   .about__wrapper {
     padding: 5px 0 55px;
+    -ms-grid-columns: auto 370px;
+    grid-template-columns: auto 370px;
   }
 }
 @media (max-width: 767px) {
@@ -4458,16 +4452,23 @@ button,
   }
 }
 
-.about__title {
+.about h2 {
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
   letter-spacing: 0;
   text-align: left;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
+}
+@media (max-width: 1199px) {
+  .about h2 {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 3px 0 35px;
+  }
 }
 
-.about__title::after {
+.about h2::after {
   content: "О нас";
   position: absolute;
   left: 55%;
@@ -4477,24 +4478,33 @@ button,
   line-height: 1;
   opacity: 0.03;
 }
-@media screen and (max-width: 1199px) {
-  .about__title::after {
+@media (max-width: 1199px) {
+  .about h2::after {
     font-size: 40px;
+    left: 51%;
+    top: 45px;
   }
 }
-@media screen and (max-width: 767px) {
-  .about__title::after {
+@media (max-width: 767px) {
+  .about h2::after {
     font-size: 26px;
   }
 }
 
-.about__subtitle {
+.about h3 {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
   letter-spacing: 0;
   text-align: left;
   margin-bottom: 18px;
+}
+@media (max-width: 1199px) {
+  .about h3 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
 }
 
 .about__text {
@@ -4509,6 +4519,11 @@ button,
   text-align: left;
   margin-bottom: 28px;
 }
+@media (max-width: 1199px) {
+  .about__text p {
+    margin-right: 30px;
+  }
+}
 
 .about__media {
   height: 474px;
@@ -4517,6 +4532,13 @@ button,
   background-image: image-set("../img/about/about.png" 1x, "../img/about/about@2x.png" 2x);
   background-color: #ffffff;
   margin-top: 40px;
+}
+@media (max-width: 1199px) {
+  .about__media {
+    margin-top: 60px;
+    background-image: -webkit-image-set(url("../img/about/about-tablet.png") 1x, url("../img/about/about-tablet@2x.png") 2x);
+    background-image: image-set("../img/about/about-tablet.png" 1x, "../img/about/about-tablet@2x.png" 2x);
+  }
 }
 
 .about__media img {
@@ -4530,7 +4552,7 @@ button,
 
 .reviews__wrapper {
   position: relative;
-  padding: 42px 0 90px 120px;
+  padding: 48px 0 90px 120px;
   width: 100%;
   max-width: 1440px;
 }
@@ -4545,7 +4567,7 @@ button,
   }
 }
 
-.reviews__title {
+.reviews h2 {
   margin: 15px auto 25px;
   font-size: 35px;
   font-weight: 800;
@@ -4554,20 +4576,20 @@ button,
   text-align: left;
 }
 @media (max-width: 1199px) {
-  .reviews__title {
+  .reviews h2 {
     font-size: 25px;
     line-height: 25px;
   }
 }
 @media (max-width: 767px) {
-  .reviews__title {
+  .reviews h2 {
     font-size: 22px;
     line-height: 22px;
     margin-bottom: 30px;
   }
 }
 
-.reviews__title::after {
+.reviews h2::after {
   content: "Отзывы";
   position: absolute;
   left: 115px;
@@ -4577,13 +4599,13 @@ button,
   line-height: 1;
   opacity: 0.03;
 }
-@media screen and (max-width: 1199px) {
-  .reviews__title::after {
+@media (max-width: 1199px) {
+  .reviews h2::after {
     font-size: 40px;
   }
 }
-@media screen and (max-width: 767px) {
-  .reviews__title::after {
+@media (max-width: 767px) {
+  .reviews h2::after {
     font-size: 26px;
   }
 }
@@ -4779,10 +4801,12 @@ button,
 @media (max-width: 1199px) {
   .advantages__wrapper {
     padding: 0;
+    width: 100%;
+    max-width: 1200px;
   }
 }
 
-.advantages__title {
+.advantages h2 {
   margin: 0 auto 45px;
   padding: 5px 0 0 0;
   font-size: 35px;
@@ -4792,20 +4816,20 @@ button,
   text-align: center;
 }
 @media (max-width: 1199px) {
-  .advantages__title {
+  .advantages h2 {
     font-size: 25px;
     line-height: 25px;
   }
 }
 @media (max-width: 767px) {
-  .advantages__title {
+  .advantages h2 {
     font-size: 22px;
     line-height: 22px;
     margin-bottom: 30px;
   }
 }
 
-.advantages__title::after {
+.advantages h2::after {
   content: "Преимущества";
   position: absolute;
   left: 34%;
@@ -4815,13 +4839,13 @@ button,
   line-height: 1;
   opacity: 0.03;
 }
-@media screen and (max-width: 1199px) {
-  .advantages__title::after {
+@media (max-width: 1199px) {
+  .advantages h2::after {
     font-size: 40px;
   }
 }
-@media screen and (max-width: 767px) {
-  .advantages__title::after {
+@m @include vp-767 {
+  .advantages h2::after {
     font-size: 26px;
   }
 }
@@ -4936,7 +4960,7 @@ button,
   margin: 0 auto 30px;
 }
 
-.advantages__subtitle {
+.advantages h3 {
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
@@ -4978,11 +5002,11 @@ button,
 .gallery__text {
   margin: 0;
   width: 813px;
-  padding: 30px 0 10px;
+  padding: 25px 0 8px;
 }
 
-.gallery__title {
-  margin: 0 auto 20px;
+.gallery h2 {
+  margin: 0 auto 25px;
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
@@ -4991,20 +5015,20 @@ button,
   padding: 0 120px;
 }
 @media (max-width: 1199px) {
-  .gallery__title {
+  .gallery h2 {
     font-size: 25px;
     line-height: 25px;
   }
 }
 @media (max-width: 767px) {
-  .gallery__title {
+  .gallery h2 {
     font-size: 22px;
     line-height: 22px;
     margin-bottom: 30px;
   }
 }
 
-.gallery__title::after {
+.gallery h2::after {
   content: "Фотогалерея";
   position: absolute;
   left: 115px;
@@ -5014,13 +5038,13 @@ button,
   line-height: 1;
   opacity: 0.03;
 }
-@media screen and (max-width: 1199px) {
-  .gallery__title::after {
+@media (max-width: 1199px) {
+  .gallery h2::after {
     font-size: 40px;
   }
 }
-@media screen and (max-width: 767px) {
-  .gallery__title::after {
+@media (max-width: 767px) {
+  .gallery h2::after {
     font-size: 26px;
   }
 }
@@ -5202,7 +5226,7 @@ button,
   width: 978px;
 }
 
-.form__title {
+.form h2 {
   margin: 0;
   padding: 310px 0 0 12px;
   font-size: 35px;
@@ -5213,13 +5237,13 @@ button,
   color: #ffffff;
 }
 @media (max-width: 1199px) {
-  .form__title {
+  .form h2 {
     font-size: 25px;
     line-height: 25px;
   }
 }
 @media (max-width: 767px) {
-  .form__title {
+  .form h2 {
     font-size: 22px;
     line-height: 22px;
   }
@@ -5287,7 +5311,7 @@ button,
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .custom-input__error,
 .custom-textarea__error {
     bottom: 20px;
@@ -5361,7 +5385,7 @@ button,
   }
 }
 
-.contacts__title {
+.contacts h2 {
   margin: 0;
   padding: 32px 45px 22px 0;
   font-size: 35px;
@@ -5371,19 +5395,19 @@ button,
   text-align: left;
 }
 @media (max-width: 1199px) {
-  .contacts__title {
+  .contacts h2 {
     font-size: 25px;
     line-height: 25px;
   }
 }
 @media (max-width: 767px) {
-  .contacts__title {
+  .contacts h2 {
     font-size: 22px;
     line-height: 22px;
   }
 }
 
-.contacts__title::after {
+.contacts h2::after {
   content: "Контакты";
   position: absolute;
   left: 120px;
@@ -5393,13 +5417,13 @@ button,
   line-height: 1;
   opacity: 0.03;
 }
-@media screen and (max-width: 1199px) {
-  .contacts__title::after {
+@media (max-width: 1199px) {
+  .contacts h2::after {
     font-size: 40px;
   }
 }
-@media screen and (max-width: 767px) {
-  .contacts__title::after {
+@media (max-width: 767px) {
+  .contacts h2::after {
     font-size: 26px;
   }
 }
