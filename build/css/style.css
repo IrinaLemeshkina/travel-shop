@@ -3177,6 +3177,11 @@ button,
     padding-top: 5px;
   }
 }
+@media (max-width: 767px) {
+  .nav__list {
+    display: block;
+  }
+}
 
 @media (max-width: 1199px) {
   .nav__item {
@@ -3184,6 +3189,12 @@ button,
     font-weight: 400;
     line-height: 14px;
     text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  .nav__item {
+    min-width: 130px;
+    padding-bottom: 15px;
   }
 }
 
@@ -5845,7 +5856,7 @@ button,
 }
 @media (max-width: 767px) {
   .contacts__wrapper {
-    padding: 6px 15px 65px;
+    padding: 6px 15px 15px;
   }
 }
 
@@ -6082,6 +6093,17 @@ button,
   }
 }
 
+@media (max-width: 1199px) {
+  .contacts__map-container {
+    padding-right: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__map-container {
+    padding: 0;
+  }
+}
+
 .footer {
   margin: 0;
 }
@@ -6109,7 +6131,7 @@ button,
 }
 @media (max-width: 767px) {
   .footer__wrapper {
-    padding: 6px 15px 65px;
+    padding: 32px 18px 0;
   }
 }
 
@@ -6142,6 +6164,12 @@ button,
     gap: 70px;
   }
 }
+@media (max-width: 767px) {
+  .footer__top {
+    max-width: 290px;
+    gap: 8px;
+  }
+}
 
 .confidancial {
   padding-right: 90px;
@@ -6161,6 +6189,7 @@ button,
   margin: o auto;
   padding-top: 20px;
   display: block;
+  @in;
 }
 
 .footer__nav {
@@ -6169,6 +6198,16 @@ button,
 @media (max-width: 1199px) {
   .footer__nav {
     padding-left: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__nav {
+    gap: 25px;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    padding-bottom: 0;
+    padding-left: 1px;
   }
 }
 
@@ -6189,6 +6228,11 @@ button,
     margin-top: 30px;
   }
 }
+@media (max-width: 767px) {
+  .footer__social {
+    margin-top: 0;
+  }
+}
 
 .social__list {
   list-style: none;
@@ -6202,6 +6246,14 @@ button,
           justify-content: center;
   width: 120px;
   padding-left: 0;
+}
+@media (max-width: 767px) {
+  .social__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0;
+  }
 }
 
 .social__item {
