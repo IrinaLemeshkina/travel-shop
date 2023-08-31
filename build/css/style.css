@@ -4398,7 +4398,7 @@ button,
 }
 @media (max-width: 767px) {
   .education {
-    padding: 6px 15px 65px;
+    padding: 6px 15px 0;
   }
 }
 
@@ -4658,7 +4658,14 @@ button,
 }
 @media (max-width: 767px) {
   .about__wrapper {
-    padding: 6px 15px 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 6px 0 0;
   }
 }
 
@@ -4675,6 +4682,13 @@ button,
     font-size: 25px;
     line-height: 25px;
     margin: 3px 0 35px;
+  }
+}
+@media (max-width: 767px) {
+  .about h2 {
+    margin: 43px 0 35px;
+    font-size: 22px;
+    line-height: 22px;
   }
 }
 
@@ -4716,6 +4730,13 @@ button,
     margin-bottom: 0;
   }
 }
+@media (max-width: 767px) {
+  .about h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+}
 
 .about__text {
   padding-top: 50px;
@@ -4723,6 +4744,11 @@ button,
 @media (max-width: 1199px) {
   .about__text {
     padding-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .about__text {
+    padding: 0 0 0 15px;
   }
 }
 
@@ -4737,6 +4763,14 @@ button,
 @media (max-width: 1199px) {
   .about__text p {
     margin-right: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .about__text p {
+    margin: 20px 10px 40px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
   }
 }
 
@@ -4754,6 +4788,14 @@ button,
     margin-top: 0;
     background-image: -webkit-image-set(url("../img/about/about-tablet.png") 1x, url("../img/about/about-tablet@2x.png") 2x);
     background-image: image-set("../img/about/about-tablet.png" 1x, "../img/about/about-tablet@2x.png" 2x);
+  }
+}
+@media (max-width: 767px) {
+  .about__media {
+    margin-top: -20px;
+    height: 402px;
+    background-image: -webkit-image-set(url("../img/about/about-mobile.png") 1x, url("../img/about/about-mobile@2x.png") 2x);
+    background-image: image-set("../img/about/about-mobile.png" 1x, "../img/about/about-mobile@2x.png" 2x);
   }
 }
 
