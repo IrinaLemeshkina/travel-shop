@@ -26,7 +26,7 @@
 
   @include vp-767 {
     width: 100%;
-    padding-bottom: 32px;
+    padding: 0 15px;
   }
 }
 
@@ -99,6 +99,10 @@
     margin: 0 auto;
     margin-bottom: 50px;
     width: 206px;
+  }
+
+  @include vp-767 {
+    width: 180px;
   }
 }
 

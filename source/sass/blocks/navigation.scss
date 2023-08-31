@@ -145,7 +145,7 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
-    gap: 10px;
+    gap: 0 10px;
     padding-top: 15px;
   }
 }
@@ -205,6 +205,14 @@
       margin: 0;
       padding: 3px 0 0 12px;
     }
+
+    @include vp-767 {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 14px;
+      text-align: right;
+      padding: 8px 0 0 12px;
+    }
   }
 }
 
@@ -229,8 +237,9 @@
   font-size: 18px;
 
   @include vp-767 {
+    display: grid;
     grid-area: 2 / 1 / 3 / 3;
-    padding-top: 20px;
+    min-width: 110px;
   }
 }
 
@@ -253,6 +262,7 @@
   @include vp-767 {
     width: 112px;
     height: 34px;
+    margin-left: 145px;
   }
 }
 

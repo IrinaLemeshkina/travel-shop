@@ -3007,7 +3007,7 @@ button,
     grid-template-columns: repeat(2, auto);
     -ms-grid-rows: (auto)[2];
     grid-template-rows: repeat(2, auto);
-    gap: 10px;
+    gap: 0 10px;
     padding-top: 15px;
   }
 }
@@ -3067,6 +3067,15 @@ button,
     padding: 3px 0 0 12px;
   }
 }
+@media (max-width: 767px) {
+  .navigation__link-phone {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    text-align: right;
+    padding: 8px 0 0 12px;
+  }
+}
 
 .navigation__list {
   display: -webkit-box;
@@ -3101,12 +3110,14 @@ button,
 }
 @media (max-width: 767px) {
   .navigation__phone {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: 2/1/3/3;
-    padding-top: 20px;
+    min-width: 110px;
   }
 }
 
@@ -3129,6 +3140,7 @@ button,
   .navigation__logo {
     width: 112px;
     height: 34px;
+    margin-left: 145px;
   }
 }
 
@@ -3222,7 +3234,7 @@ button,
 @media (max-width: 767px) {
   .hero__container {
     width: 100%;
-    padding-bottom: 32px;
+    padding: 0 15px;
   }
 }
 
@@ -3302,6 +3314,11 @@ button,
     margin: 0 auto;
     margin-bottom: 50px;
     width: 206px;
+  }
+}
+@media (max-width: 767px) {
+  .hero__info .btn {
+    width: 180px;
   }
 }
 
