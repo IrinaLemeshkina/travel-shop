@@ -5594,6 +5594,13 @@ button,
     height: 679px;
   }
 }
+@media (max-width: 767px) {
+  .form {
+    background: url("../img/form/background-mobile.jpg") no-repeat;
+    height: 621px;
+    margin-bottom: 0;
+  }
+}
 
 .form__wrapper {
   position: relative;
@@ -5640,6 +5647,11 @@ button,
     max-width: 266px;
   }
 }
+@media (max-width: 767px) {
+  .form__action {
+    max-width: 290px;
+  }
+}
 
 .form h2 {
   margin: 0;
@@ -5662,6 +5674,7 @@ button,
   .form h2 {
     font-size: 22px;
     line-height: 22px;
+    padding-top: 130px;
   }
 }
 
@@ -5678,6 +5691,13 @@ button,
   .form p {
     padding: 0 100px;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .form p {
+    padding: 0;
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 
@@ -5702,6 +5722,12 @@ button,
     font-size: 14px;
     line-height: 14px;
     padding: 0 0 0 15px;
+  }
+}
+@media (max-width: 767px) {
+  .form__input label input {
+    min-width: 290px;
+    min-height: 50px;
   }
 }
 
@@ -5737,7 +5763,7 @@ button,
 }
 @media (max-width: 767px) {
   .form__submit {
-    margin-top: 8px;
+    margin-top: 5px;
     padding: 17px 20px 17px 20px;
     min-width: 100%;
   }
