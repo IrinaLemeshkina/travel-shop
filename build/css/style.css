@@ -5362,6 +5362,11 @@ button,
     padding-bottom: 5px;
   }
 }
+@media (max-width: 767px) {
+  .gallery__text {
+    width: 320px;
+  }
+}
 
 .gallery h2 {
   margin: 0 auto 25px;
@@ -5384,7 +5389,8 @@ button,
   .gallery h2 {
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    padding: 10px 45px 0 15px;
   }
 }
 
@@ -5406,6 +5412,8 @@ button,
 @media (max-width: 767px) {
   .gallery h2::after {
     font-size: 26px;
+    left: 15px;
+    top: 25px;
   }
 }
 
@@ -5422,6 +5430,16 @@ button,
     padding: 0 350px 0 45px;
     font-size: 14px;
     line-height: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .gallery p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0;
+    padding: 0 15px 40px;
+    display: block;
   }
 }
 
@@ -5459,9 +5477,14 @@ button,
 @media (max-width: 767px) {
   .gallery__card {
     width: 100%;
+    max-width: 320px;
     height: 100%;
-    display: block;
     padding-bottom: 15px;
+    -ms-grid-columns: 159px 172px;
+    grid-template-columns: 159px 172px;
+    -ms-grid-rows: 103px 153px;
+    grid-template-rows: 103px 153px;
+    gap: 3px;
   }
 }
 
@@ -5498,19 +5521,7 @@ button,
 }
 @media (max-width: 767px) {
   .gallery .swiper-button {
-    top: 58%;
-    width: 20px;
-    height: 20px;
-    background-size: 10px 19px;
-  }
-  .gallery .swiper-button--prev {
-    left: 15px;
-  }
-  .gallery .swiper-button--next {
-    right: 10%;
-  }
-  .gallery .swiper-button:hover, .gallery .swiper-button:focus {
-    background-size: 10px 10px;
+    top: -1%;
   }
 }
 .gallery .swiper-button-prev {
@@ -5536,6 +5547,11 @@ button,
     left: 84.1%;
   }
 }
+@media (max-width: 1199px) {
+  .gallery .swiper-button-prev {
+    left: 70.5%;
+  }
+}
 .gallery .swiper-button-next {
   right: 8.3%;
   -webkit-transform: translate(0, -10%);
@@ -5558,6 +5574,11 @@ button,
 @media (max-width: 1199px) {
   .gallery .swiper-button {
     right: 6%;
+  }
+}
+@media (max-width: 1199px) {
+  .gallery .swiper-button {
+    right: 5%;
   }
 }
 
