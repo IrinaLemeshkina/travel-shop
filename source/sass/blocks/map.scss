@@ -23,9 +23,3 @@
     height: 320px;
   }
 }
-
-.contacts__map-container {
-  @include vp-1199 {
-    padding-right: 60px;
-  }
-}

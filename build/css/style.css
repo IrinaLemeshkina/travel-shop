@@ -5089,12 +5089,6 @@ button,
   }
 }
 
-@media (max-width: 1199px) {
-  .contacts__map-container {
-    padding-right: 60px;
-  }
-}
-
 .advantages {
   margin: 0;
 }
@@ -5875,6 +5869,7 @@ button,
   .contacts h2 {
     font-size: 22px;
     line-height: 22px;
+    padding: 15px 45px 12px 0;
   }
 }
 
@@ -5912,6 +5907,15 @@ button,
     padding-right: 145px;
   }
 }
+@media (max-width: 767px) {
+  .contacts__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+    padding: 0 15px 0 0;
+  }
+}
 
 .contacts__list {
   padding: 15px 55px;
@@ -5923,6 +5927,14 @@ button,
     display: grid;
     -ms-grid-columns: 185px 205px 310px;
     grid-template-columns: 185px 205px 310px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 8px 16px 10px;
+    gap: 5px;
   }
 }
 
@@ -5953,6 +5965,12 @@ button,
     margin-top: 0;
   }
 }
+@media (max-width: 767px) {
+  .contacts__item h3 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
 
 .contacts__item p {
   margin-top: -2px;
@@ -5964,6 +5982,11 @@ button,
     line-height: 22px;
     letter-spacing: 0;
     text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__item p {
+    padding-right: 90px;
   }
 }
 
@@ -5999,6 +6022,13 @@ button,
     top: 34%;
   }
 }
+@media (max-width: 767px) {
+  .contacts__item--tell::before {
+    width: 22px;
+    height: 22px;
+    right: 32px;
+  }
+}
 
 .contacts__item--mail::before {
   content: url("../img/sprite/contacts-mail.svg");
@@ -6018,6 +6048,13 @@ button,
     top: 34%;
   }
 }
+@media (max-width: 767px) {
+  .contacts__item--mail::before {
+    width: 22px;
+    height: 22px;
+    right: 32px;
+  }
+}
 
 .contacts__item--adress::before {
   content: url("../img/sprite/contacts-adress.svg");
@@ -6035,6 +6072,13 @@ button,
     height: 24px;
     right: 36px;
     top: 34%;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__item--adress::before {
+    width: 22px;
+    height: 22px;
+    right: 29px;
   }
 }
 
