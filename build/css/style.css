@@ -5109,7 +5109,7 @@ button,
 }
 @media (max-width: 1199px) {
   .advantages__wrapper {
-    padding: 35px 30px 0;
+    padding: 30px 15px 0;
     width: 100%;
     max-width: 1200px;
   }
@@ -5180,6 +5180,11 @@ button,
     gap: 30px 0;
   }
 }
+@media (max-width: 767px) {
+  .advantages__swiper-wrapper {
+    gap: 15px;
+  }
+}
 
 .advantages__card {
   margin: 0 auto;
@@ -5200,7 +5205,7 @@ button,
 @media (max-width: 767px) {
   .advantages__card {
     width: 100%;
-    padding: 20px 10px;
+    padding: 20px 10px 7px;
   }
 }
 
@@ -5275,6 +5280,13 @@ button,
     margin-bottom: 25px;
   }
 }
+@media (max-width: 767px) {
+  .advantages__icon {
+    width: 42px;
+    height: 42px;
+    padding: 11px;
+  }
+}
 
 @media (max-width: 1199px) {
   .advantages__icon svg {
@@ -5295,6 +5307,12 @@ button,
   .advantages h3 {
     font-size: 16px;
     line-height: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages h3 {
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 
