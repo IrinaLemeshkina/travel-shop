@@ -69,7 +69,7 @@
   padding-top: 20px;
   display: block;
 
-  @include v-767 {
+  @include vp-767 {
     text-align: left;
   }
 }
