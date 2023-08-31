@@ -13,7 +13,7 @@
   }
 
   @include vp-767 {
-    padding: 0 0 30px 0;
+    padding: 0 15px 30px;
   }
 }
 
@@ -33,7 +33,7 @@
   @include vp-767 {
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 30px;
+    margin: 25px auto 35px;
   }
 }
 
@@ -53,6 +53,8 @@
 
   @include vp-767 {
     font-size: 26px;
+    left: 15px;
+    top: 0;
   }
 }
 
@@ -85,7 +87,7 @@
     width: 100%;
     height: 100%;
     display: block;
-    padding-bottom: 15px;
+    padding-bottom: 35px;
   }
 }
 
@@ -97,6 +99,11 @@
   @include vp-1199 {
     min-width: 186px;
     min-height: 237px;
+  }
+
+  @include vp-767 {
+    min-width: 250px;
+    min-height: 169px;
   }
 }
 
@@ -118,23 +125,7 @@
   }
 
   @include vp-767 {
-    top: 58%;
-    width: 20px;
-    height: 20px;
-    background-size: 10px 19px;
-
-    &--prev {
-      left: 15px;
-    }
-
-    &--next {
-      right: 10%;
-    }
-
-    &:hover,
-    &:focus {
-      background-size: 10px 10px;
-    }
+    top: -8.5%;
   }
 
   &-prev {
@@ -154,6 +145,10 @@
       background-image: url("../img/sprite/arrow-left-active.svg");
       background-size: 37px 35px;
       background-color: #1c3374;
+    }
+
+    @include vp-767 {
+      left: 73%;
     }
   }
 
@@ -177,6 +172,10 @@
       fill: #ffffff;
     }
   }
+
+  @include vp-767 {
+    right: 0;
+  }
 }
 
 .reviews__info {
@@ -187,6 +186,10 @@
 
   @include vp-1199 {
     height: 245px;
+  }
+
+  @include vp-767 {
+    padding-top: 20px;
   }
 }
 

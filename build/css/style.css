@@ -4821,7 +4821,7 @@ button,
 }
 @media (max-width: 767px) {
   .reviews__wrapper {
-    padding: 0 0 30px 0;
+    padding: 0 15px 30px;
   }
 }
 
@@ -4843,7 +4843,7 @@ button,
   .reviews h2 {
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 30px;
+    margin: 25px auto 35px;
   }
 }
 
@@ -4865,6 +4865,8 @@ button,
 @media (max-width: 767px) {
   .reviews h2::after {
     font-size: 26px;
+    left: 15px;
+    top: 0;
   }
 }
 
@@ -4904,7 +4906,7 @@ button,
     width: 100%;
     height: 100%;
     display: block;
-    padding-bottom: 15px;
+    padding-bottom: 35px;
   }
 }
 
@@ -4918,6 +4920,12 @@ button,
   .reviews__card img {
     min-width: 186px;
     min-height: 237px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__card img {
+    min-width: 250px;
+    min-height: 169px;
   }
 }
 
@@ -4941,19 +4949,7 @@ button,
 }
 @media (max-width: 767px) {
   .reviews .swiper-button {
-    top: 58%;
-    width: 20px;
-    height: 20px;
-    background-size: 10px 19px;
-  }
-  .reviews .swiper-button--prev {
-    left: 15px;
-  }
-  .reviews .swiper-button--next {
-    right: 10%;
-  }
-  .reviews .swiper-button:hover, .reviews .swiper-button:focus {
-    background-size: 10px 10px;
+    top: -8.5%;
   }
 }
 .reviews .swiper-button-prev {
@@ -4974,6 +4970,11 @@ button,
   background-size: 37px 35px;
   background-color: #1c3374;
 }
+@media (max-width: 767px) {
+  .reviews .swiper-button-prev {
+    left: 73%;
+  }
+}
 .reviews .swiper-button-next {
   right: 9%;
   -webkit-transform: translate(0, -10%);
@@ -4993,6 +4994,11 @@ button,
   background-color: #1c3374;
   fill: #ffffff;
 }
+@media (max-width: 767px) {
+  .reviews .swiper-button {
+    right: 0;
+  }
+}
 
 .reviews__info {
   display: -ms-grid;
@@ -5006,6 +5012,11 @@ button,
 @media (max-width: 1199px) {
   .reviews__info {
     height: 245px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__info {
+    padding-top: 20px;
   }
 }
 
