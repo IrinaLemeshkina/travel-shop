@@ -46,9 +46,9 @@
 }
 
 .advantages h2::after {
-  content: "Преимущества";
+  content: attr(data-value);
   position: absolute;
-  left: 34%;
+  left: 31%;
   top: 35px;
   font-size: 55px;
   font-weight: 800;

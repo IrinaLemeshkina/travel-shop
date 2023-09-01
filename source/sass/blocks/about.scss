@@ -6,7 +6,6 @@
   position: relative;
   margin: 0 auto;
   width: 100%;
-  max-width: 1440px;
   display: grid;
   grid-template-columns: auto 585px;
   padding-right: 120px;
@@ -45,7 +44,7 @@
 }
 
 .about h2::after {
-  content: "О нас";
+  content: attr(data-value);
   position: absolute;
   left: 55%;
   top: 60px;

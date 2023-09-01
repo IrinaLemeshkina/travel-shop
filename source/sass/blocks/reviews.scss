@@ -38,7 +38,7 @@
 }
 
 .reviews h2::after {
-  content: "Отзывы";
+  content: attr(data-value);
   position: absolute;
   left: 115px;
   top: 45px;

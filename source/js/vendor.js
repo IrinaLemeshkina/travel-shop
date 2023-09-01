@@ -2,5 +2,4 @@
 import './vendor/swiper';
 import './vendor/focus-visible-polyfill';
 import './vendor/leaflet';
-import './vendor/map';
 import './utils/scroll-lock';

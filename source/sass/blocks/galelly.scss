@@ -57,7 +57,7 @@
 }
 
 .gallery h2::after {
-  content: "Фотогалерея";
+  content: attr(data-value);
   position: absolute;
   left: 115px;
   top: 67px;
@@ -139,7 +139,7 @@
   }
 }
 
-.swiper-slide-vertical {
+.gallery-slide-vertical {
   grid-row: 1/3;
 }
 

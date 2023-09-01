@@ -1,5 +1,6 @@
 .contacts {
   margin: 0;
+  border-bottom: 1px solid #2d383f;
 }
 
 .contacts__wrapper {
@@ -11,7 +12,6 @@
   display: grid;
   grid-template-columns: 595px 585px;
   gap: 20px;
-  border-bottom: 1px solid #2d383f;
 
   @include vp-1199 {
     padding: 5px 45px 85px;
@@ -46,7 +46,7 @@
 }
 
 .contacts h2::after {
-  content: "Контакты";
+  content: attr(data-value);
   position: absolute;
   left: 120px;
   top: 18px;
