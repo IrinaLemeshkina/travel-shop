@@ -60,6 +60,8 @@
   }
 
   @include vp-767 {
+    left: 20px;
+    top: 62px;
     font-size: 26px;
   }
 }
@@ -141,6 +143,7 @@
     line-height: 22px;
     letter-spacing: 0;
     text-align: left;
+    margin-top: 0;
   }
 
   @include vp-767 {
@@ -164,9 +167,9 @@
 
 .contacts__item--tell::before {
   content: url("../img/sprite/contacts-phone.svg");
-  position: relative;
-  right: 0;
-  top: 12.5%;
+  position: absolute;
+  right: 90%;
+  top: 42%;
   z-index: -1;
   width: 26px;
   height: 26px;
@@ -174,6 +177,7 @@
 
 
   @include vp-1199 {
+    position: relative;
     width: 24px;
     height: 24px;
     right: 36px;
@@ -181,6 +185,7 @@
   }
 
   @include vp-767 {
+    position: relative;
     width: 22px;
     height: 22px;
     right: 32px;
@@ -189,9 +194,9 @@
 
 .contacts__item--mail::before {
   content: url("../img/sprite/contacts-mail.svg");
-  position: relative;
-  right: 0;
-  top: 12.5%;
+  position: absolute;
+  right: 90%;
+  top: 58%;
   z-index: -1;
   width: 26px;
   height: 26px;
@@ -199,6 +204,7 @@
 
 
   @include vp-1199 {
+    position: relative;
     width: 24px;
     height: 24px;
     right: 36px;
@@ -214,9 +220,9 @@
 
 .contacts__item--adress::before {
   content: url("../img/sprite/contacts-adress.svg");
-  position: relative;
-  right: 0;
-  top: 12.5%;
+  position: absolute;
+  right: 90%;
+  top: 74%;
   z-index: -1;
   width: 26px;
   height: 26px;
@@ -224,6 +230,7 @@
 
 
   @include vp-1199 {
+    position: relative;
     width: 24px;
     height: 24px;
     right: 36px;
