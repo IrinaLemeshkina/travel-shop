@@ -1,21 +1,25 @@
 .about {
   margin: 0;
+  display: flex;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
 }
 
 .about__wrapper {
   position: relative;
-  margin: 0 auto;
+  margin: 0;
   width: 100%;
-  display: grid;
-  grid-template-columns: auto 585px;
-  padding-right: 120px;
+  max-width: 1440px;
 
   @include vp-1199 {
     padding: 0;
-    grid-template-columns: auto 370px;
+    max-width: 1200px;
   }
 
   @include vp-767 {
+    max-width: 767px;
     display: flex;
     flex-direction: column;
     padding: 6px 0 0;
@@ -46,7 +50,7 @@
 .about h2::after {
   content: attr(data-value);
   position: absolute;
-  left: 55%;
+  left: 0;
   top: 60px;
   font-size: 55px;
   font-weight: 800;
@@ -55,8 +59,8 @@
 
   @include vp-1199 {
     font-size: 40px;
-    left: 51%;
-    top: 45px;
+    left: 0;
+    top: 0;
   }
 
   @include vp-767 {
@@ -65,7 +69,6 @@
     top: 44.6%;
   }
 }
-
 
 .about h3 {
   font-size: 21px;
@@ -90,6 +93,7 @@
 
 .about__text {
   padding-top: 50px;
+  max-width: 585px;
 
   @include vp-1199 {
     padding-top: 0;
@@ -126,14 +130,17 @@
   background-image: image-set("../img/about/about.png" 1x, "../img/about/about@2x.png" 2x);
   background-color: #ffffff;
   margin-top: 40px;
+  min-width: 735px;
 
   @include vp-1199 {
+    min-width: 398px;
     height: 434px;
     margin-top: 0;
     background-image: image-set("../img/about/about-tablet.png" 1x, "../img/about/about-tablet@2x.png" 2x);
   }
 
   @include vp-767 {
+    min-width: 290px;
     margin-top: -20px;
     height: 402px;
     background-image: image-set("../img/about/about-mobile.png" 1x, "../img/about/about-mobile@2x.png" 2x);

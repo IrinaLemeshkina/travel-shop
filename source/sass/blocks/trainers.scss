@@ -5,6 +5,7 @@
 
   @include vp-1199 {
     margin-bottom: 0;
+    border-bottom: none;
   }
 }
 
@@ -15,7 +16,7 @@
   max-width: 1440px;
 
   @include vp-1199 {
-    padding: 23px 0 32px 45px;
+    padding: 23px 45px 32px 45px;
     margin-bottom: 0;
   }
 
