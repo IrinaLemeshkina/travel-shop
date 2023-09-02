@@ -8,7 +8,7 @@
   margin: 0 auto;
   margin-bottom: 30px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
 
   @include vp-1199 {
     padding: 35px 30px 0;
@@ -25,7 +25,7 @@
 
 .advantages h2 {
   margin: 0 auto 45px;
-  padding: 5px 0 0 0;
+  padding: 50px 0 0 0;
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
@@ -70,11 +70,15 @@
 
 .advantages__swiper {
   text-align: center;
-  overflow: visible;
   z-index: 2;
 }
 
 .advantages__swiper-wrapper {
+  padding: 0 0 85px 0;
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+
   @include vp-1199 {
     display: flex;
     flex-direction: row;
@@ -109,7 +113,7 @@
 
 .advantages .swiper-button {
   position: absolute;
-  top: 123.5%;
+  top: 98%;
   width: 37px;
   height: 35px;
   background-repeat: no-repeat;
@@ -125,7 +129,7 @@
   }
 
   &-prev {
-    left: 46.7%;
+    left: 47.3%;
     transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-left.svg");
     fill: $color-default-white;
@@ -145,7 +149,7 @@
   }
 
   &-next {
-    right: 46.7%;
+    right: 47.3%;
     transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-right.svg");
     fill: $color-default-white;
