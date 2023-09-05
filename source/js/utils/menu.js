@@ -1,6 +1,6 @@
 let navMain = document.querySelector('.navigation');
 let navToggle = document.querySelector('.navigation__toggle');
-let bodyElements = document.querySelectorAll('.data--close-menu');
+let bodyElements = document.querySelectorAll('.navigation__link--close-menu');
 
 const showMenu = () => {
   if (navToggle) {
